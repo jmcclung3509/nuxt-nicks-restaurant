@@ -1,58 +1,64 @@
 <template>
-	<header class="main relative flex flex-col" >
-		<div class="container m-auto flex justify-between items-center">
+	<header class="main relative flex bg-grey-900 text-grey-100 py-3.5 px-6 shadow justify-between w-full">
+		<div class="container m-auto flex justify-between items-center w-full">
 			<div class="left">
 				<img src="@/assets/images/logo-pelican.png" alt="Nick's logo" />
 			</div>
-			<nav class="right main flex justify-center items--center">
-				<ul class="flex">
-					<li class="relative">
-						<HeaderDropdown v-slot="slotProps" :page="usePages('Menu')" :open="data.isOpen === 0"
-							@toggleDropdown="onToggleDropdown">
-							<div class="inner flex">
-								<div class="flex flex-col space-y-6 p-8">
-									<nuxt-link v-for="item in slotProps.page.subpages" :key="item.id" :subpage="subpage"
-										:to="item.link">{{ item.name }}</nuxt-link>
-								</div>
-							</div>
-						</HeaderDropdown>
-					</li>
-					<li class="relative px-5">
-						<nuxt-link to="/about">About Us</nuxt-link>
-					</li>
-					<li class="relative px-5">
-						<nuxt-link to="/seabreeze">SeaBreeze Motel</nuxt-link>
-					</li>
-					<li class="relative px-5">
-						<HeaderDropdown v-slot="slotProps" :page="usePages('Gallery')" :open="data.isOpen === 3"
-							@toggleDropdown="onToggleDropdown">
-							<div class="inner flex">
-								<div class="flex flex-col space-y-6 p-8">
-									<nuxt-link v-for="item in slotProps.page.subpages" :key="item.id" :subpage="subpage"
-										:to="item.link">{{ item.name }}</nuxt-link>
-								</div>
-							</div>
-						</HeaderDropdown>
-					</li>
-				</ul>
+			<template v-if="['lg', 'xl'].includes(size)">
+				<nav class="w-3/4 right main flex justify-end items-center">
+					<ul class="flex justify-between gap-10">
+						<li><nuxt-link to="" class="dropdown-toggle"
+								@click="data.showDropdown = !data.showDropdown">
+								Menu</nuxt-link>
+							<ul v-if="data.showDropdown" class="dropdown-menu">
+								<li><nuxt-link to="/menu#breakfast">Breakfast & Lunch</nuxt-link></li>
+								<li><nuxt-link to="/menu#dinner">Dinner</nuxt-link></li>
+								<li><nuxt-link to="/menu#dessert">Dessert</nuxt-link></li>
+								<li><nuxt-link to="/menu#bar">Bar & Lounge</nuxt-link></li>
+								<li><nuxt-link to="/menu#happy-hour">Happy Hour</nuxt-link></li>
+								<li><nuxt-link to="/menu#banquet">Banquets</nuxt-link></li>
+								<li><nuxt-link to="/menu#music">Live Music</nuxt-link></li>
+							</ul>
+						</li>
+						<li><nuxt-link to="/about">About Us</nuxt-link></li>
+						<li><nuxt-link to="/seabreeze">SeaBreeze</nuxt-link></li>
+						<li><nuxt-link to="" class="dropdown-toggle"
+								@click="data.showDropdown = !data.showDropdown">
+								Gallery</nuxt-link>
+							<ul v-if="data.showDropdown" class="dropdown-menu">
+								<li><nuxt-link to="/gallery#views">Views</nuxt-link></li>
+								<li><nuxt-link to="/gallery#food">Menu Items</nuxt-link></li>
+								<li><nuxt-link to="/gallery#fun">Fun Times</nuxt-link></li>
+							</ul>
+						</li>
 
-			</nav>
+					</ul>
+				</nav>
+			</template>
+			<template v-else>
+
+				<i class="mobile-nav-trigger font-icon cursor-pointer text-5xl z-10 bi bi-list"
+				@click="(data.mobileIsOpen = !data.mobileIsOpen), $emit('mobileMenuClick', data.mobileIsOpen)"></i>
+			</template>
+
 		</div>
 	</header>
 </template>
 
 <script setup>
-import pagesJson from "assets/json/pages.json"
 
-
-const pages = pagesJson
 const data = reactive({
-	isOpen: false,
+	showDropdown: false,
+	mobileIsOpen: false
 })
-const onToggleDropdown= (payload)=> {
-	data.isOpen = payload.open ? payload.id : null
+
+
+const size = useScreensize().size
+
+const onMobileMenuClick = (payload)=>{
+	data.mobileIsOpen = payload
+	console.log(payload)
 }
-
-
 </script>
+
 
