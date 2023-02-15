@@ -4,69 +4,32 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
 
 
+body {
+	background-color: whitesmoke;
+	color: rgba(245, 245, 245, 0.2);
+	font-family: 'Playfair Display', sans-serif;
+	width: 100%;
+}
 
 
-header {
-	font-family: 'Playfair Display';
 
-	.main {
+.wrap-inner {
+	margin-top: 100px;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: justify-between;
 
-		width: 100%;
-		transition: background-color .5s;
-		background-color: transparent;
+}
 
-		.mobile-nav-trigger {
-			color: white;
-		}
-	}
+i {
+	color: darkblue;
 
-	}
-	.mobile-menu-open{
-		position: absolute;
-
-		width: 100vw;
-		height: 100vh;
-		background: whitesmoke;
-		opacity: 0.8;
-		justify-content: flex-start;
-		align-items: flex-end;
-		z-index: 100;
-		padding: 100px;
-
-
-	}
-
-nav.main{
-	ul{
-		li{
-			a{
-				opacity: .75;
-				transition: opacity .2s ease;
-				position: relative;
-				&:hover{
-					opacity: 1;
-				}
-			}
-		}
+	&::before {
+		color: red;
 	}
 }
 
-.dropdown{
-	position: absolute;
-	left: 50%;
-	top: 50px;
-	transform: translate(50%, 10px);
-	transition: transform 0.5s, opacity .2s;
-}
-main{
-	opacity: 1;
-	transition: opacity .5s;
-	.header{
-		position: relative;
-		z-index: 2;
-
-	}
-}
 h1 {
 	color: #1b1b1b;
 	font-family: 'Oswald', sans-serif;
@@ -76,6 +39,110 @@ h1 {
 	font-family: "Material Icons";
 	content: "\e5d2";
 }
+
+header {
+	&.main {
+		position: fixed;
+		top: 0;
+		color: #1b1b1b;
+		width: 100%;
+		transition: background-color .5s;
+		background-color: transparent;
+		height: 100px;
+
+	}
+}
+
+
+.mobile-menu {
+	background-color: rgba(whitesmoke, 95%);
+	margin-right: -100px;
+	height: 100%;
+	right: 0;
+	padding: 100px;
+	width: 90%;
+	transition: transform .5s cubic-bezier(.76, -.01, .3, .99);
+
+	.accordion {
+		.hidden-part {
+			margin: 1rem 0;
+		}
+	}
+
+	a {
+		color: blue;
+		opacity: .8;
+		transition: opacity .4s;
+
+		&:hover {
+			opacity: 1;
+		}
+
+		&.parent-link {
+			font-size: 1.5rem;
+		}
+
+		&.child-link {
+			font-size: 1rem;
+		}
+	}
+}
+
+.mobile-menu-open {
+	transform: translateX(0);
+	position: absolute;
+	top: 100px;
+	width: 100vw;
+	height: 100vh;
+	background: whitesmoke;
+	opacity: 0.8;
+	justify-content: flex-start;
+	align-items: flex-end;
+	z-index: 100;
+	padding: 100px;
+
+
+
+}
+
+
+nav.main {
+	ul {
+		li {
+			a {
+				opacity: .75;
+				transition: opacity .2s ease;
+				position: relative;
+
+				&:hover {
+					opacity: 1;
+				}
+			}
+		}
+	}
+}
+
+// 	.dropdown {
+// 		position: absolute;
+// 		left: 50%;
+// 		top: 50px;
+// 		transform: translate(50%, 10px);
+// 		transition: transform 0.5s, opacity .2s;
+// 	}
+// }
+
+// main {
+// 	opacity: 1;
+// 	transition: opacity .5s;
+
+// 	.header {
+// 		position: relative;
+// 		z-index: 2;
+
+// 	}
+// }
+
+
 
 //hero
 
