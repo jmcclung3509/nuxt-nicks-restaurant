@@ -10,7 +10,7 @@ header {
 	font-family: 'Playfair Display';
 
 	.main {
-	
+
 		width: 100%;
 		transition: background-color .5s;
 		background-color: transparent;
@@ -18,17 +18,24 @@ header {
 		.mobile-nav-trigger {
 			color: white;
 		}
-
-		.mobile-menu-open {
-			pointer-events: none;
-
-			.mobile-nav-trigger {
-				color: grey;
-				pointer-events: all;
-			}
-		}
 	}
-}
+
+	}
+	.mobile-menu-open{
+		position: absolute;
+
+		width: 100vw;
+		height: 100vh;
+		background: whitesmoke;
+		opacity: 0.8;
+		justify-content: flex-start;
+		align-items: flex-end;
+		z-index: 100;
+		padding: 100px;
+
+
+	}
+
 nav.main{
 	ul{
 		li{

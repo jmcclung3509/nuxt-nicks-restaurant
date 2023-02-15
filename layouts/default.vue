@@ -5,6 +5,7 @@
 		<div class="flex flex-wrap" :class="{ 'mobile-menu-open': isMobileMenuOpen }">
 			<Overlay></Overlay>
 			<Header @mobileMenuClick = "onMobileMenuClick"/>
+
 			<div class="wrap-inner w-full overflow-hidden" :class="{fixed: globalState.overlay.showing || isMobileMenuOpen }">
 			<slot/>
 		</div>
