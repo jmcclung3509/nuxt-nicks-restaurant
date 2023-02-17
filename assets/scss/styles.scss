@@ -5,7 +5,7 @@
 
 
 body {
-	background-color: whitesmoke;
+	background-color: #dfe9ec;
 	color: rgba(245, 245, 245, 0.2);
 	font-family: 'Playfair Display', sans-serif;
 	width: 100%;
@@ -14,6 +14,7 @@ body {
 
 
 .wrap-inner {
+	pointer-events: none;
 	margin-top: 100px;
 	min-height: 100vh;
 	display: flex;
@@ -75,13 +76,17 @@ header {
 
 
 .mobile-menu {
-	background-color: rgba(whitesmoke, 95%);
-	margin-right: -100px;
-	height: 100%;
+
+	margin: 100px auto auto 50px;
+	z-index: 99;
+	background-color: whitesmoke;
+
+	height: 100vh;
 	right: 0;
 	padding: 100px;
-	width: 70%;
+	width: 75%;
 	transition: transform .5s cubic-bezier(.76, -.01, .3, .99);
+
 
 	.accordion {
 		.hidden-part {
@@ -144,19 +149,31 @@ nav.main {
 
 //HERO
 
-.hero-container {
+.wrap-inner{
+	.hero-container {
 	background: rgba(235, 235, 242, .3);
-	background-image: url('@/assets/images/saira-C5Uk-pdNXWg-unsplash.png');
+	background-image: url('@/assets/images/homepage/saira-C5Uk-pdNXWg-unsplash.png');
 	background-size: cover;
 	background-position: cover;
+	}
+
+	// @screen lg {
+	// 	max-width: 1400px;
+	// 	margin: auto;
+	// 	border: 20px solid #384960;
+	// 	margin: 100px auto;
+
+
+	// }
 
 	.outer-container {
 		position: relative;
 		background: rgba(245, 245, 245, 0.5);
 		border-radius: 12px;
 		z-index: 1;
-		border: 20px solid transparent;
-		border-image: linear-gradient(99.6deg, rgb(112, 128, 152, .5) 10.6%, rgb(242, 227, 234, .5) 32.9%, rgb(234, 202, 213, .5) 52.7%, rgb(220, 227, 239, .5) 72.8%, rgb(185, 205, 227, .5) 81.1%, rgb(154, 180, 212, .5) 100%) 1;
+		border: 10px solid #384960;
+		// border: 10px solid transparent;
+		// border-image: linear-gradient(99.6deg, rgb(112, 128, 152, .5) 10.6%, rgb(242, 227, 234, .5) 32.9%, rgb(234, 202, 213, .5) 52.7%, rgb(220, 227, 239, .5) 72.8%, rgb(185, 205, 227, .5) 81.1%, rgb(154, 180, 212, .5) 100%) 1;
 
 
 	}
@@ -166,7 +183,7 @@ nav.main {
 //MENU {
 body[class="page-menu"] {
 	.wrap-inner {
-		background-image: url("@/assets/images/shell-background.jpeg");
+		background-image: url("@/assets/images/menu-page/shell-background.jpeg");
 		background-size: cover;
 		background-position: cover;
 		background-repeat: no-repeat;
@@ -181,6 +198,21 @@ body[class="page-menu"] {
 			height: 100%;
 			z-index: 1;
 			position: absolute;
+		}
+	}
+
+	.menu-subsection {
+		background-color: white;
+		border: 20px solid #384960;
+		margin: auto;
+		padding: 20px;
+		z-index: 5;
+		border-radius: 9px;
+
+		img {
+			padding: 20px;
+			border: 3px solid #F49586;
+			border-radius: 9px;
 		}
 	}
 }
