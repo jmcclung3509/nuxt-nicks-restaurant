@@ -9,9 +9,12 @@ body {
 	color: rgba(245, 245, 245, 0.2);
 	font-family: 'Playfair Display', sans-serif;
 	width: 100%;
+	color: #1b1b1b;
 }
 
-
+.section-container{
+	margin: 100px;
+}
 
 .wrap-inner {
 	pointer-events: none;
@@ -149,7 +152,7 @@ nav.main {
 
 //HERO
 
-.wrap-inner{
+
 	.hero-container {
 	background: rgba(235, 235, 242, .3);
 	background-image: url('@/assets/images/homepage/saira-C5Uk-pdNXWg-unsplash.png');
@@ -177,8 +180,10 @@ nav.main {
 
 
 	}
+.section-container.hours{
 
-}
+	}
+
 
 //MENU {
 body[class="page-menu"] {
