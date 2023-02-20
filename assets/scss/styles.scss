@@ -12,7 +12,7 @@ body {
 	color: #1b1b1b;
 }
 
-.section-container{
+.section-container {
 	margin: 100px;
 }
 
@@ -39,9 +39,19 @@ h1 {
 	font-family: 'Oswald', sans-serif;
 }
 
+h2 {
+	font-size: 2rem;
+}
+h4{
+	font-size: 1.2rem;
+}
+
 p {
-	font-size: 1.5rem;
+	font-size: 1rem;
 	color: #1b1b1b;
+}
+.red{
+	color: red;
 }
 
 .icon-menu {
@@ -67,7 +77,7 @@ header {
 
 	.hidden-part {
 		position: absolute;
-		background-color: rgba(#fff, 0.8);
+		background-color: whitesmoke;
 		padding: 10px 25px 10px 45px;
 
 		transform: translateX(-50%) translateY(12px);
@@ -149,40 +159,56 @@ nav.main {
 		}
 	}
 }
-
+//FOOTER
+.footer {
+	background-color:rgba(72, 158, 185, .6);
+}
 //HERO
 
 
-	.hero-container {
+.hero-container {
 	background: rgba(235, 235, 242, .3);
 	background-image: url('@/assets/images/homepage/saira-C5Uk-pdNXWg-unsplash.png');
 	background-size: cover;
-	background-position: cover;
+	background-position: center;
+	animation: backgroundFade 2s infinite;
+	animation-fill-mode: forwards;
+  }
+
+  @keyframes backgroundFade{
+	0% {
+	  background-image: url('@/assets/images/homepage/saira-C5Uk-pdNXWg-unsplash.png');
 	}
-
-	// @screen lg {
-	// 	max-width: 1400px;
-	// 	margin: auto;
-	// 	border: 20px solid #384960;
-	// 	margin: 100px auto;
-
-
-	// }
-
-	.outer-container {
-		position: relative;
-		background: rgba(245, 245, 245, 0.5);
-		border-radius: 12px;
-		z-index: 1;
-		border: 10px solid #384960;
-		// border: 10px solid transparent;
-		// border-image: linear-gradient(99.6deg, rgb(112, 128, 152, .5) 10.6%, rgb(242, 227, 234, .5) 32.9%, rgb(234, 202, 213, .5) 52.7%, rgb(220, 227, 239, .5) 72.8%, rgb(185, 205, 227, .5) 81.1%, rgb(154, 180, 212, .5) 100%) 1;
-
-
+	50% {
+	  background-image: url('@/assets/images/homepage/jairo-gonzalez-vGP-QLJu9LM-unsplash.png');
 	}
-.section-container.hours{
-
+	100% {
+	  background-image: url('@/assets/images/homepage/saira-C5Uk-pdNXWg-unsplash.png');
 	}
+  }
+
+// @screen lg {
+// 	max-width: 1400px;
+// 	margin: auto;
+// 	border: 20px solid #384960;
+// 	margin: 100px auto;
+
+
+// }
+
+.outer-container {
+	position: relative;
+	background: rgba(245, 245, 245, 0.5);
+	border-radius: 12px;
+	z-index: 1;
+	border: 10px solid #384960;
+	// border: 10px solid transparent;
+	// border-image: linear-gradient(99.6deg, rgb(112, 128, 152, .5) 10.6%, rgb(242, 227, 234, .5) 32.9%, rgb(234, 202, 213, .5) 52.7%, rgb(220, 227, 239, .5) 72.8%, rgb(185, 205, 227, .5) 81.1%, rgb(154, 180, 212, .5) 100%) 1;
+
+
+}
+
+.section-container.hours {}
 
 
 //MENU {
@@ -193,6 +219,7 @@ body[class="page-menu"] {
 		background-position: cover;
 		background-repeat: no-repeat;
 		position: relative;
+
 
 		&:after {
 			content: "";
