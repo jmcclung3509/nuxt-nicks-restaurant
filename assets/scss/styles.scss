@@ -42,7 +42,8 @@ h1 {
 h2 {
 	font-size: 2rem;
 }
-h4{
+
+h4 {
 	font-size: 1.2rem;
 }
 
@@ -50,7 +51,8 @@ p {
 	font-size: 1rem;
 	color: #1b1b1b;
 }
-.red{
+
+.red {
 	color: red;
 }
 
@@ -159,42 +161,78 @@ nav.main {
 		}
 	}
 }
+
 //FOOTER
 .footer {
-	background-color:rgba(72, 158, 185, .6);
+	background-color: rgba(72, 158, 185, .6);
 }
-//HERO
 
+//HERO
 
 .hero-container {
 	background: rgba(235, 235, 242, .3);
-	background-image: url('@/assets/images/homepage/saira-C5Uk-pdNXWg-unsplash.png');
 	background-size: cover;
 	background-position: center;
-	animation: backgroundFade 2s infinite;
-	animation-fill-mode: forwards;
-  }
 
-  @keyframes backgroundFade{
-	0% {
-	  background-image: url('@/assets/images/homepage/saira-C5Uk-pdNXWg-unsplash.png');
-	}
-	50% {
-	  background-image: url('@/assets/images/homepage/jairo-gonzalez-vGP-QLJu9LM-unsplash.png');
-	}
-	100% {
-	  background-image: url('@/assets/images/homepage/saira-C5Uk-pdNXWg-unsplash.png');
-	}
-  }
+	.bg {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		opacity: 0;
+		z-index: -1;
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+		transition: opacity 4.5s;
 
-// @screen lg {
-// 	max-width: 1400px;
-// 	margin: auto;
-// 	border: 20px solid #384960;
-// 	margin: 100px auto;
+		&.active {
+			opacity: 1;
+			z-index: 0;
+		}
+
+	}
+
+	.bg1 {
+		background-image: url("@/assets/images/homepage/saira-C5Uk-pdNXWg-unsplash.png");
+	}
+
+	.bg2 {
+		background-image: url("@/assets/images/homepage/leo-korman-VHIhK52epL0-unsplash.jpg");
+	}
+
+	.bg3 {
+		background-image: url("@/assets/images/homepage/jairo-gonzalez-vGP-QLJu9LM-unsplash.jpg");
+	}
+
+
+}
+
+
+
+
+// &.bg1 {
+// 	background-image: url("@/assets/images/homepage/saira-C5Uk-pdNXWg-unsplash.png");
+
 
 
 // }
+
+// &.bg2 {
+// 	background-image: url("@/assets/images/homepage/leo-korman-VHIhK52epL0-unsplash.jpg");
+
+
+// }
+
+// &.bg3 {
+// 	background-image: url("@/assets/images/homepage/jairo-gonzalez-vGP-QLJu9LM-unsplash.jpg");
+
+// }
+
+
+
+
 
 .outer-container {
 	position: relative;
@@ -202,10 +240,6 @@ nav.main {
 	border-radius: 12px;
 	z-index: 1;
 	border: 10px solid #384960;
-	// border: 10px solid transparent;
-	// border-image: linear-gradient(99.6deg, rgb(112, 128, 152, .5) 10.6%, rgb(242, 227, 234, .5) 32.9%, rgb(234, 202, 213, .5) 52.7%, rgb(220, 227, 239, .5) 72.8%, rgb(185, 205, 227, .5) 81.1%, rgb(154, 180, 212, .5) 100%) 1;
-
-
 }
 
 .section-container.hours {}
