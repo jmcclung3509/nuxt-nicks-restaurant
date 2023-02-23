@@ -1,6 +1,8 @@
 <template>
 
-<Hero />
+
+	<Hero />
+	<Hours />
 
 </template>
 

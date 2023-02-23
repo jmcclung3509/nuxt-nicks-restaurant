@@ -1,6 +1,6 @@
 
 <template>
-	<div class="mobile-menu flex flex-col lg:hidden overflow-auto space-y-4">
+	<div class="mobile-menu flex flex-col lg:hidden overflow-auto space-y-4 absolute">
 		<ul>
 			<li>
 				<Accordion id="0" :open="data.accordionPages[0].open" @toggleAccordion="onAccordionClick">
@@ -29,8 +29,8 @@
 					</template>
 				</Accordion>
 			</li>
-			<li><nuxt-link to="/about">About Us</nuxt-link></li>
-			<li><nuxt-link to="/seabreeze">SeaBreeze</nuxt-link></li>
+			<li><nuxt-link to="/about"  class="parent-link">About Us</nuxt-link></li>
+			<li><nuxt-link to="/seabreeze"  class="parent-link">SeaBreeze</nuxt-link></li>
 			<li>
 				<Accordion :id="1" :open="data.accordionPages[1].open" @toggleAccordion="onAccordionClick">
 					<template #visible="visibleProps">
@@ -40,7 +40,7 @@
 					<template #hidden>
 						<div class="flex flex-col">
 
-							<nuxt-link class="child-link whitespace-nowrap" :external="true" 
+							<nuxt-link class="child-link whitespace-nowrap" :external="true"
 								to="/gallery#views">Views</nuxt-link>
 							<nuxt-link class="child-link whitespace-nowrap" :external="true" to="/gallery#food">Menu
 								Items</nuxt-link>
@@ -63,8 +63,9 @@ const data = reactive({
 		{ id: 1,name: "Gallery",open: false },
 	]
 })
-const onAccordionClick = (payload) => {
-	data.accordionPages.forEach((item) => (item.open = item.id === payload.id ? payload.open : false))
+const onAccordionClick=(payload)=>{
+	data.accordionPages.forEach((item)=>(item.open = item.id === payload.id ? payload.open : false))
 }
+
 </script>
 

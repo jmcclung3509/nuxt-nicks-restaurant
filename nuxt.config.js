@@ -1,4 +1,4 @@
-import VueKinesis from 'vue-kinesis'
+
 
 
 

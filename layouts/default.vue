@@ -2,15 +2,19 @@
 	<Html>
 
 	<Body :class="`page-${route.name}`">
-		<div class="flex flex-wrap" :class="{ 'mobile-menu-open': isMobileMenuOpen }">
-			<Overlay></Overlay>
-			<Header @mobileMenuClick = "onMobileMenuClick"/>
 
-			<div class="wrap-inner w-full overflow-hidden" :class="{fixed: globalState.overlay.showing || isMobileMenuOpen }">
-			<slot/>
-		</div>
-		<HeaderMobile></HeaderMobile>
-		</div>
+		<Header @mobileMenuClick="onMobileMenuClick" />
+
+		<template v-if="data.isMobileOpen">
+			<Overlay></Overlay>
+			<HeaderMobile></HeaderMobile>
+		</template>
+
+		<template v-else>
+			<slot></slot>
+		</template>
+
+		<Footer />
 	</Body>
 
 	</Html>
@@ -18,17 +22,21 @@
 <script setup>
 
 const route = useRoute()
-const {isMobile}= useScreensize()
+const { isMobile } = useScreensize()
 
-const data = reactive ({
-	mobileIsOpen: false
+const data = reactive({
+	isMobileOpen: false,
+
 })
 
-const onMobileMenuClick = (payload)=>{
-	data.mobileIsOpen = payload
+const onMobileMenuClick = (payload) => {
+
+	data.isMobileOpen = payload
+	console.log('click',payload)
 }
-const isMobileMenuOpen = computed(()=>{
-	return data.mobileIsOpen
+const isMobileMenuOpen = computed(() => {
+
+	return data.isMobileOpen
 })
 
 
