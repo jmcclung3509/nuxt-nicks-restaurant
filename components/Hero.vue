@@ -9,7 +9,7 @@
 					class="outer-container p-4 lg:0-14 xl:p-20 flex justify-center items-center w-3/4 h-1/2 lg:w-1/2 m-auto">
 					<div class="text-container flex flex-col justify-center items-center py-4 px-2 md:p-7 space-y-14">
 						<h1
-							class="text-4xl lg:text-5xl text-center animate__animated animate__zoomIn animate__delay-1s">
+							class="text-4xl lg:text-5xl text-center animate__animated animate__zoomIn animate__delay-1s ">
 							Welcome to Nick's Restaurant
 						</h1>
 						<p class="text-center w-[80%] mx-auto">

@@ -35,7 +35,8 @@ i {
 }
 
 h1 {
-	color: #1b1b1b;
+	color: #00356B;
+
 	font-family: 'Oswald', sans-serif;
 }
 
@@ -49,11 +50,21 @@ h4 {
 
 p {
 	font-size: 1rem;
-	color: #1b1b1b;
+	color: #384960;
+	@screen lg{
+		font-size: 1.2rem;
+	}
 }
 
 .red {
 	color: red;
+}
+.gradient-text{
+	background: linear-gradient(90deg, #1E90FF, #0076CE, #1560bd );
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	color: transparent;
 }
 
 .icon-menu {
@@ -203,7 +214,7 @@ nav.main {
 	}
 
 	.bg3 {
-		background-image: url("@/assets/images/homepage/jairo-gonzalez-vGP-QLJu9LM-unsplash.jpg");
+		background-image: url("@/assets/images/homepage/datingscout-GeeiwkXf9ss-unsplash.jpg");
 	}
 
 
@@ -212,37 +223,22 @@ nav.main {
 
 
 
-// &.bg1 {
-// 	background-image: url("@/assets/images/homepage/saira-C5Uk-pdNXWg-unsplash.png");
-
-
-
-// }
-
-// &.bg2 {
-// 	background-image: url("@/assets/images/homepage/leo-korman-VHIhK52epL0-unsplash.jpg");
-
-
-// }
-
-// &.bg3 {
-// 	background-image: url("@/assets/images/homepage/jairo-gonzalez-vGP-QLJu9LM-unsplash.jpg");
-
-// }
-
-
-
-
-
 .outer-container {
 	position: relative;
-	background: rgba(245, 245, 245, 0.8);
+	background: rgba(245, 245, 245, 0.6);
 	border-radius: 12px;
 	z-index: 1;
 	border: 10px solid #384960;
 }
 
-.section-container.hours {}
+.section-container.hours {
+	p{
+		font-size: 1.2rem;
+	}
+	h2{
+		border-bottom: 2px solid #384960;
+	}
+}
 
 
 //MENU {
