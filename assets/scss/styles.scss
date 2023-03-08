@@ -102,15 +102,16 @@ header {
 
 
 .mobile-menu {
-
-	margin: 100px auto auto 50px;
+	position: fixed;
+	top: 50px;
+	margin: auto;
 	z-index: 99;
 	background-color: whitesmoke;
-
-	height: 100vh;
+	overflow-y:hidden;
+	height: 100%;
 	right: 0;
-	padding: 100px;
-	width: 75%;
+	padding: 50px 100px 0;
+	width: 100%;
 	transition: transform .5s cubic-bezier(.76, -.01, .3, .99);
 
 
@@ -142,7 +143,7 @@ header {
 .mobile-menu-open {
 	transform: translateX(0);
 	position: absolute;
-	top: 100px;
+
 	width: 100vw;
 	height: 100vh;
 	background: whitesmoke;
@@ -278,7 +279,15 @@ body[class="page-menu"] {
 		}
 	}
 }
-
+//seabreeze-page
+.sb-content{
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	@screen lg{
+		width: 60%;
+	}
+}
 //component styles
 .accordion {
 	&.enabled {

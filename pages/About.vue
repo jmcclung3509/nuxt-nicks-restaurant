@@ -1,6 +1,6 @@
 <template>
-    <section id="history" class="section-container flex flex-wrap flex-start space-y-14 pt-24">
-
+    <section id="history" class="section-container   pt-24">
+<div class="inner md:w-[80%] lg:w-[60%] mx-auto flex flex-wrap flex-start space-y-14">
         <h2 class="mx-auto"> Our History</h2>
         <p>Indulge in the splendor of ocean waves pounding against the shore, the elegance of sea birds soaring over foamy water, and the allure of sunbeams glimmering on the back of a gray whale. Unwind and bask in the serene atmosphere of Rockaway Beach's picturesque cove. It's no surprise that this enchanting location lured a man from thousands of miles away to call it his home.</p>
         <div  class="mx-auto">
@@ -25,7 +25,7 @@
           <img src="@/assets/images/about/nick-friend-celebrating.jpg" class="img-fluid" alt="nick celebrating with friend">
 
       </div>
-
+</div>
     </section>
 
 </template>

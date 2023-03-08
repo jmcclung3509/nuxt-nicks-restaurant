@@ -1,5 +1,5 @@
 <template>
-	<header class="main flex bg-grey-900 text-grey-100 py-3.5 px-6 shadow justify-between w-full">
+	<header class="main relative flex bg-grey-900 text-grey-100 py-3.5 px-6 shadow justify-between w-full">
 		<div class="container m-auto flex justify-between items-end">
 			<div class="left">
 				<img src="@/assets/images/logo-pelican.png"
@@ -58,7 +58,7 @@
 						</li>
 
 						<li><nuxt-link to="/about">About Us</nuxt-link></li>
-						<li><nuxt-link to="/seabreeze">SeaBreeze</nuxt-link></li>
+						<li><a href="https://www.seabreezemotel.net" target="_blank"> Sea Breeze Motel</a> </li>
 						<li>
 							<Accordion :id="1"
 								:open="data.pages[1].open"

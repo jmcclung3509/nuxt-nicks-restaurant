@@ -3,5 +3,8 @@
 	"diffEditor.ignoreTrimWhitespace": false,
 	"scm.diffDecorationsIgnoreTrimWhitespace": "false",
 	"editor.defaultFormatter": "esbenp.prettier-vscode",
-	"cSpell.words": ["header"]
+	"cSpell.words": ["header"],
+	"[vue]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	}
 }
