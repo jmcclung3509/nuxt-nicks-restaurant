@@ -14,7 +14,7 @@
 				<h4 class="lg:mb-4">Find Us</h4>
 				<p class="find-us text-center"> 100 Rockaway Beach Ave<br>
 					Pacifica, CA 94044 </p>
-				<a href="https://goo.gl/maps/xZ3RCC9fvPJ7a1Gx7" target="_blank"> Directions</a>
+				<a class="underline-link" href="https://goo.gl/maps/iXdghZP6SX4gyWML9" target="_blank"> Directions</a>
 			</div>
 
 			<div class="social flex basis-1 flex-col lg:basis-1/3 justify-center items-center">
@@ -28,7 +28,7 @@
 		</section>
 
 		<div class="author flex justify-center w-full">
-			<p class> Jessica Turner || Website Design & Development</p>
+			<p class="text-[.8rem]"> Jessica Turner || Website Design & Development</p>
 		</div>
 	</div>
 

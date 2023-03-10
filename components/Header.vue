@@ -8,46 +8,46 @@
 			<template v-if="['lg', 'xl'].includes(size)">
 				<nav class="w-3/4 right main flex justify-end items-center">
 					<ul class="flex justify-between gap-10">
-						<li><nuxt-link to="/">Home</nuxt-link></li>
+						<li><nuxt-link class="underline-link parent-link" to="/">Home</nuxt-link></li>
 						<li>
 							<Accordion id="0"
 								:open="data.pages[0].open"
 								@toggleAccordion="data.pages[0].open = !data.pages[0].open">
 								<template #visible="visibleProps">
-									<nuxt-link to=""
-										class="parent-link">Menu</nuxt-link>
+									<nuxt-link to="/menu"
+										class="parent-link underline-link">Menu</nuxt-link>
 								</template>
 								<template #hidden="{ closeAccordion }">
-									<div class="flex flex-col dropdown"
+									<div class="flex flex-col dropdown space-y-7"
 										@mouseleave="closeAccordion">
 										<nuxt-link @click="closeAccordion"
 											to="/menu#breakfast"
-											class="child-link whitespace-nowrap">
+											class="child-link underline-link whitespace-nowrap">
 											Breakfast & Lunch
 										</nuxt-link>
 										<nuxt-link @click="closeAccordion"
 											to="/menu#dinner"
-											class="child-link whitespace-nowrap">Dinner</nuxt-link>
+											class="child-link underline-link  whitespace-nowrap">Dinner</nuxt-link>
 										<nuxt-link @click="closeAccordion"
 											to="/menu#dessert"
-											class="child-link whitespace-nowrap">
+											class="child-link underline-link  whitespace-nowrap">
 											Dessert
 										</nuxt-link>
 										<nuxt-link @click="closeAccordion"
 											to="/menu#bar"
-											class="child-link whitespace-nowrap">
+											class="child-link underline-link  whitespace-nowrap">
 											Bar & Lounge
 										</nuxt-link>
 										<nuxt-link @click="closeAccordion"
 											to="/menu#happy-hour"
-											class="child-link whitespace-nowrap">Happy
+											class="child-link underline-link  whitespace-nowrap">Happy
 											Hour</nuxt-link>
 										<nuxt-link @click="closeAccordion"
 											to="/menu#banquet"
-											class="child-link whitespace-nowrap">Banquets</nuxt-link>
+											class="child-link  underline-link  whitespace-nowrap">Banquets</nuxt-link>
 										<nuxt-link @click="closeAccordion"
 											to="/menu#music"
-											class="child-link whitespace-nowrap">Live
+											class="child-link underline-link  whitespace-nowrap">Live
 											Music</nuxt-link>
 
 									</div>
@@ -57,30 +57,30 @@
 							</Accordion>
 						</li>
 
-						<li><nuxt-link to="/about">About Us</nuxt-link></li>
-						<li><a href="https://www.seabreezemotel.net" target="_blank"> Sea Breeze Motel</a> </li>
+						<li><nuxt-link class = "underline-link parent-link" to="/about">About Us</nuxt-link></li>
+						<li><a class = "underline-link parent-link"  href="https://www.seabreezemotel.net" target="_blank"> Sea Breeze Motel</a> </li>
 						<li>
 							<Accordion :id="1"
 								:open="data.pages[1].open"
 								@toggleAccordion="data.pages[1].open = !data.pages[1].open">
 								<template #visible="visibleProps">
-									<nuxt-link to=""
-										class="parent-link">
+									<nuxt-link to="/gallery"
+										class="parent-link underline-link ">
 										Gallery</nuxt-link>
 								</template>
 								<template #hidden="{ closeAccordion }">
-									<div class="flex flex-col dropdown"
+									<div class="flex flex-col dropdown space-y-7"
 										@mouseleave="closeAccordion">
 
 										<nuxt-link @click="closeAccordion"
-											class="child-link whitespace-nowrap"
+											class="child-link underline-link whitespace-nowrap"
 											to="/gallery#views">Views</nuxt-link>
 										<nuxt-link @click="closeAccordion"
-											class="child-link whitespace-nowrap"
+											class="child-link underline-link  whitespace-nowrap"
 											to="/gallery#food">Menu
 											Items</nuxt-link>
 										<nuxt-link @click="closeAccordion"
-											class="child-link whitespace-nowrap"
+											class="child-link underline-link whitespace-nowrap"
 											to="/gallery#fun">Fun
 											Times</nuxt-link>
 

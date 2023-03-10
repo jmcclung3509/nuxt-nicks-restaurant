@@ -1,8 +1,13 @@
 <template>
+
+
 	<div class="container w-[90%] mx-auto ">
+			<div class="container mx-auto pt-36 pb-14">
+		<h1 class="text-5xl text-center" > Menu</h1>
+	</div>
 		<section
 			id="breakfast"
-			class="menu-container w-full md:w-3/4 mx-auto flex flex-col justify-content space-y-28 mx-auto pt-36">
+			class="menu-container w-full md:w-3/4 mx-auto flex flex-col justify-content space-y-28 mx-auto">
 			<div class="menu-subsection">
 				<img
 					src="@/assets/images/menu-page/breakfast_lunch-1.png"
