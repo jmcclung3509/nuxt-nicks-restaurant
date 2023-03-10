@@ -9,10 +9,6 @@
 				class="img-container flex flex-wrap justify-between item-start">
 				<img
 					class="w-full md:w-[48%] pb-7"
-					src="@/assets/images/gallery/views/sunset7.jpeg"
-					alt="sunset" />
-				<img
-					class="w-full md:w-[48%] pb-7"
 					src="@/assets/images/gallery/views/sunset_2.png"
 					alt="sunset" />
 				<img
@@ -36,6 +32,10 @@
 					class="w-full md:w-[48%] pb-7"
 					src="@/assets/images/gallery/views/window-view.jpeg"
 					alt="sunset" />
+				<img
+					class="w-full md:w-[48%] pb-7"
+					src="@/assets/images/gallery/views/nicks-sign.png"
+					alt="sunset" />
 			</div>
 		</section>
 		<section
@@ -48,29 +48,28 @@
 					class="w-full md:w-[48%] mx-auto"
 					src="@/assets/images/gallery/food/crab-sandwich.jpeg"
 					alt="crab sandwich" />
-						<img
+				<img
 					class="w-full md:w-[48%] mx-auto"
 					src="@/assets/images/gallery/food/tomahawk.jpeg"
 					alt="tomahawk" />
 				<img
-					class="w-full md:w-[48%] mx-auto "
+					class="w-full md:w-[48%] mx-auto"
 					src="@/assets/images/gallery/food/fried-calamari.jpg"
 					alt="fried calamari" />
 				<img
-					class="w-full md:w-[48%] mx-auto "
+					class="w-full md:w-[48%] mx-auto"
 					src="@/assets/images/gallery/food/lobster.jpeg"
 					alt="lobster" />
 
-
 				<img
-					class="w-full md:w-[48%] mx-auto "
+					class="w-full md:w-[48%] mx-auto"
 					src="@/assets/images/gallery/food/Mahi-special.jpeg"
 					alt="Mahi-special" />
 				<img
 					class="w-full md:w-[48%] mx-auto"
 					src="@/assets/images/gallery/food/scallop-special.jpeg"
 					alt="Scallop special" />
-								<img
+				<img
 					class="w-full md:w-[48%] mx-auto"
 					src="@/assets/images/gallery/food/clam-chowder.jpg"
 					alt="clam chowder" />
@@ -86,19 +85,16 @@
 					src="@/assets/images/gallery/fun/4th-of-july.jpeg"
 					alt="4th of July BBQ" />
 				<img
-					class="w-full mx-auto md:w-[48%] "
+					class="w-full mx-auto md:w-[48%]"
 					src="@/assets/images/gallery/fun/4th-of-july-2.jpeg"
 					alt="4th of July BBQ" />
-						<img
-					class="w-full mx-auto md:w-[48%] "
+				<img
+					class="w-full mx-auto md:w-[48%]"
 					src="@/assets/images/gallery/fun/4th-of-july-5.jpeg"
 					alt="4th of July BBQ" />
 				<img
 					class="w-full mx-auto lg:w-[67%]"
-					src="@/assets/images/gallery/fun/4th-of-july-3.jpeg"/>
-
-
-
+					src="@/assets/images/gallery/fun/4th-of-july-3.jpeg" />
 
 				<img
 					class="w-full md:w-[48%] mx-auto"
