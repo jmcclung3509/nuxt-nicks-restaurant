@@ -62,11 +62,6 @@
 					alt="lobster" />
 
 
-
-				<img
-					class="w-full lg:w-[60%] mx-auto "
-					src="@/assets/images/gallery/food/surf-and-turf.jpeg"
-					alt="Surf & Turf" />
 				<img
 					class="w-full md:w-[48%] mx-auto "
 					src="@/assets/images/gallery/food/Mahi-special.jpeg"
