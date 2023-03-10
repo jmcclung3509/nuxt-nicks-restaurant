@@ -9,7 +9,7 @@
 				class="img-container flex flex-wrap justify-between item-start">
 				<img
 					class="w-full md:w-[48%] pb-7"
-					src="@/assets/images/gallery/views/sunset.jpeg"
+					src="@/assets/images/gallery/views/sunset7.jpeg"
 					alt="sunset" />
 				<img
 					class="w-full md:w-[48%] pb-7"
