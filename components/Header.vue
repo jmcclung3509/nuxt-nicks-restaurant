@@ -1,6 +1,7 @@
 <template>
 	<header
-		class="main relative flex bg-grey-900 text-grey-100 py-3.5 px-6 shadow justify-between w-full">
+		class="main relative flex bg-grey-900 text-grey-100 py-3.5 px-6 shadow justify-between w-full"
+		@mobileMenuClosed="onMobileMenuClosed">
 		<div class="container m-auto flex justify-between items-end">
 			<div class="left">
 				<nuxt-link to="/">
@@ -28,7 +29,7 @@
 								">
 								<template #visible="visibleProps">
 									<nuxt-link
-										to="/menu"
+										to=""
 										class="parent-link underline-link"
 										>Menu</nuxt-link
 									>
@@ -39,41 +40,48 @@
 										@mouseleave="closeAccordion">
 										<nuxt-link
 											@click="closeAccordion"
+											:external="true"
 											to="/menu#breakfast"
 											class="child-link underline-link whitespace-nowrap">
 											Breakfast & Lunch
 										</nuxt-link>
 										<nuxt-link
 											@click="closeAccordion"
+											:external="true"
 											to="/menu#dinner"
 											class="child-link underline-link whitespace-nowrap"
 											>Dinner</nuxt-link
 										>
 										<nuxt-link
 											@click="closeAccordion"
+											:external="true"
 											to="/menu#dessert"
 											class="child-link underline-link whitespace-nowrap">
 											Dessert
 										</nuxt-link>
 										<nuxt-link
+											:external="true"
 											@click="closeAccordion"
 											to="/menu#bar"
 											class="child-link underline-link whitespace-nowrap">
 											Bar & Lounge
 										</nuxt-link>
 										<nuxt-link
+											:external="true"
 											@click="closeAccordion"
 											to="/menu#happy-hour"
 											class="child-link underline-link whitespace-nowrap"
 											>Happy Hour</nuxt-link
 										>
 										<nuxt-link
+											:external="true"
 											@click="closeAccordion"
 											to="/menu#banquet"
 											class="child-link underline-link whitespace-nowrap"
 											>Banquets</nuxt-link
 										>
 										<nuxt-link
+											:external="true"
 											@click="closeAccordion"
 											to="/menu#music"
 											class="child-link underline-link whitespace-nowrap"
@@ -86,6 +94,7 @@
 
 						<li>
 							<nuxt-link
+								:external="true"
 								class="underline-link parent-link"
 								to="/about"
 								>About Us</nuxt-link
@@ -108,6 +117,7 @@
 								">
 								<template #visible="visibleProps">
 									<nuxt-link
+										:external="true"
 										to="/gallery"
 										class="parent-link underline-link">
 										Gallery</nuxt-link
@@ -118,18 +128,21 @@
 										class="flex flex-col dropdown space-y-7"
 										@mouseleave="closeAccordion">
 										<nuxt-link
+											:external="true"
 											@click="closeAccordion"
 											class="child-link underline-link whitespace-nowrap"
 											to="/gallery#views"
 											>Views</nuxt-link
 										>
 										<nuxt-link
+											:external="true"
 											@click="closeAccordion"
 											class="child-link underline-link whitespace-nowrap"
 											to="/gallery#food"
 											>Menu Items</nuxt-link
 										>
 										<nuxt-link
+											:external="true"
 											@click="closeAccordion"
 											class="child-link underline-link whitespace-nowrap"
 											to="/gallery#fun"
@@ -146,7 +159,8 @@
 				<i
 					class="mobile-nav-trigger font-icon cursor-pointer text-5xl z-2000 bi"
 					:class="mobileNavIcon"
-					@click="(data.isMobileOpen = !data.isMobileOpen),
+					@click="
+						(data.isMobileOpen = !data.isMobileOpen),
 							$emit('mobileMenuClick', data.isMobileOpen)
 					">
 				</i>
@@ -156,9 +170,15 @@
 </template>
 
 <script setup>
-
+// const props = defineProps({
+// 	mobileMenuOpen: {
+// 		type: Boolean,
+// 		default: false,
+// 	},
+// });
 const data = reactive({
 	isMobileOpen: false,
+
 	pages: [
 		{ id: "0", name: "Menu", open: false },
 		{ id: "1", name: "Gallery", open: false },
@@ -172,9 +192,14 @@ const onMobileMenuClick = (payload) => {
 	console.log(payload, data.isMobileOpen);
 };
 
-
 const mobileNavIcon = computed(() => {
-	return  data.isMobileOpen ? "bi-x" : "bi-list"
+	return data.isMobileOpen ? "bi-x" : "bi-list";
+	// console.log(data.isMobileOpen, props.mobileMenuOpen);
+	// return  props.mobileMenuOpen ? "bi-x" : "bi-list";
 });
 
+// const onMobileMenuClosed = () => {
+// 	data.isMobileOpen = props.mobileMenuOpen
+
+// };
 </script>
