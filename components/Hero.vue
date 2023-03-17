@@ -8,7 +8,7 @@
 				<div class="bg4 bg" :class="{ active: data.activeIndex === 3 }"></div>
 
 				<div
-					class="outer-container flex justify-center items-center  w-[90%] h-[80%] md:h-[70%]   lg:w-2/3 mx-auto">
+					class="outer-container flex justify-center items-center  w-[90%] h-[80%] md:h-[70%]   lg:w-2/3 lg:h-1/2 mx-auto">
 					<div class="text-container flex flex-col justify-end items-center  w-[80%] mx-auto space-y-7 lg:space-y-14">
 						<h1
 							class="text-4xl md:text-5xl text-center animate__animated animate__zoomIn animate__delay-1s ">

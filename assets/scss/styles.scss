@@ -13,7 +13,10 @@ body {
 }
 
 .section-container {
-	margin: 100px;
+	margin: 50px;
+	@screen lg {
+		margin: 100px;
+	}
 }
 
 .wrap-inner {
@@ -50,7 +53,6 @@ p {
 i {
 	color: #00356b;
 	font-size: 3rem;
-
 }
 
 .red {
@@ -124,6 +126,7 @@ header {
 		padding: 20px 40px 20px 45px;
 		transform: translateX(-50%) translateY(12px);
 	}
+
 }
 
 .mobile-menu {
@@ -135,8 +138,8 @@ header {
 	overflow-y: hidden;
 	height: 100%;
 	right: 0;
-	padding: 100px 100px 0;
-	width: 100%;
+	transform: translateX(100%);
+	width: 0%;
 	transition: transform 0.5s cubic-bezier(0.76, -0.01, 0.3, 0.99);
 
 	.accordion {
@@ -154,20 +157,19 @@ header {
 			opacity: 1;
 		}
 	}
-}
 
-.mobile-menu-open {
-	transform: translateX(0);
-	position: absolute;
+	.mobile-menu-open & {
+		transform: translateX(0);
+		position: fixed;
+		width: 100vw;
+		height: 100vh;
+		background: whitesmoke;
+		opacity: 0.95;
+		justify-content: flex-start;
+		z-index: 100;
+		padding: 100px;
+	}
 
-	width: 100vw;
-	height: 100vh;
-	background: whitesmoke;
-	opacity: 0.8;
-	justify-content: flex-start;
-	align-items: flex-end;
-	z-index: 100;
-	padding: 100px;
 }
 
 nav.main {
@@ -252,6 +254,7 @@ nav.main {
 	border-radius: 12px;
 	z-index: 1;
 	border: 10px solid #384960;
+	max-width: 1300px;
 }
 button {
 	background: linear-gradient(180deg, #1e90ff, #0076ce, #1560bd);
@@ -268,10 +271,6 @@ button {
 	}
 	h2 {
 		border-bottom: 2px solid #00356b;
-		// border-style: solid;
-		// border-bottom-width: 2px;
-		// border-image: linear-gradient(90deg, #1e90ff, #0076ce, #1560bd);
-		// border-image-slice: 1;
 	}
 }
 
@@ -298,26 +297,30 @@ body[class="page-menu"] {
 
 	.menu-subsection {
 		background-color: white;
-		border: 20px solid #384960;
+		border: 10px solid #384960;
 		margin: auto;
-		padding: 20px;
+		padding: 10px;
 		z-index: 5;
 		border-radius: 9px;
+		@screen lg {
+			border: 20px solid #384960;
+			padding: 20px;
+		}
 
 		img {
-			padding: 20px;
+			padding: 10px;
 			border: 3px solid #f49586;
 			border-radius: 9px;
+			margin: auto;
+			@screen lg {
+				padding: 20px;
+			}
 		}
 	}
 }
-//seabreeze-page
-.sb-content {
-	width: 80%;
-	margin-left: auto;
-	margin-right: auto;
-	@screen lg {
-		width: 60%;
+body[class="page-about"] {
+	img{
+		border-radius: 8px;
 	}
 }
 //component styles
