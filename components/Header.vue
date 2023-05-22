@@ -41,8 +41,9 @@
 										<nuxt-link
 											@click="closeAccordion"
 											:external="true"
-											to="/menu#breakfast"
-											class="child-link underline-link whitespace-nowrap">
+											to="/menu#"
+											class="child-link underline-link whitespace-nowrap"
+											data-go-to="breakfast">
 											Breakfast & Lunch
 										</nuxt-link>
 										<nuxt-link

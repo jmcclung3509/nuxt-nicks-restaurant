@@ -2,7 +2,7 @@
 	<Html>
 		<Body :class="`page-${route.name}`">
 			<div
-				class="flex main-page"
+				class="flex main-page page-animate"
 				:class="{ 'mobile-menu-open': data.isMobileOpen }">
 				<Header @mobileMenuClick="onMobileMenuClick"  />
 				<div class="inner w-full">

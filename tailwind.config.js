@@ -18,6 +18,8 @@ module.exports = {
 		},
 		extend: {
 			fontSize: {
+				'2xl': ['2rem', '1.25'],
+				'3xl':['2.5rem', '1.25'],
 				'4xl': ['3rem', '1.25'],
 				'5xl': ['3.5rem', '1.25'],
 				'6xl': ['3.75rem', '1.5']

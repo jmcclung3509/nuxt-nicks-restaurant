@@ -11,7 +11,28 @@ body {
 	width: 100%;
 	color: #384960;
 }
+.page-animate {
+	opacity: 0;
+	animation: fadeInPage 1s ease-in-out forwards;
+  }
+  .animate{
+	  opacity: 0;
+	  transform: translateY(30px);
+	  transition: all 1s;
+	  &.animated{
+		  opacity: 1;
+		  transform: translateY(0)
+	  }
+  }
 
+  @keyframes fadeInPage {
+	from {
+	  opacity: 0;
+	}
+	to {
+	  opacity: 1;
+	}
+  }
 .section-container {
 	margin: 50px;
 	@screen lg {

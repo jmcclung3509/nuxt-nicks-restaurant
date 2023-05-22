@@ -1,5 +1,6 @@
 <template>
-	<section id="hero">
+	<section id="hero" class="animate"
+	>
 
 			<div class="hero-container flex justify-center items-center pt-24 h-[100vh] w-[100vw]">
 				<div class="bg1 bg" :class="{ active: data.activeIndex === 0 }"></div>

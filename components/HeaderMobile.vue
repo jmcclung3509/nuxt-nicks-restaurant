@@ -21,7 +21,7 @@
 							<nuxt-link
 								:external=true
 								class="child-link whitespace-nowrap"
-								to="/menu#breakfast"
+								to="/menu"
 								>Breakfast & Lunch</nuxt-link
 							>
 							<nuxt-link
