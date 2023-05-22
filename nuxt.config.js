@@ -48,20 +48,18 @@ export default {
 				},
 			},
 		},
-	},
+
 	vite: {
 		css: {
 			devSourcemap: true,
 		},
 	},
-	css: ["@/assets/scss/styles.scss"],
+},
+css: ["@/assets/scss/styles.scss"],
 
 components: true,
 
-plugins: [
-
-
-],
+plugins: [],
 
 	buildModules: ["@nuxtjs/google-fonts"],
 
@@ -73,6 +71,9 @@ plugins: [
 			"Material+Icons": true,
 		},
 	},
+	experimental:{
+		payloadExtraction: false,
+	}
 
 
 };
