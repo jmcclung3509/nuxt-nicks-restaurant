@@ -1,12 +1,13 @@
 <template>
-	<div class="container mx-auto space-y-24 mt-36 page-animate">
+	<div class="container mx-auto space-y-24 mt-48 page-animate">
 		<h1 class="text-5xl text-center">Gallery</h1>
 		<section
 			id="views"
 			class="space-y-14 ">
-			<h2 class="text-left text-4xl w-full">Views</h2>
+
 			<div
 				class="img-container flex flex-wrap justify-between item-starts space-y-7 ">
+					<h2 class="text-left text-4xl w-full">Views</h2>
 				<img
 					class="w-full md:w-[48%]  rounded-2xl animate "
 					src="@/assets/images/gallery/views/sunset_2.png"
