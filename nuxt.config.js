@@ -59,8 +59,7 @@ export default {
 components: true,
 
 plugins: [
-	{src: '~/plugins/vue-kinesis.js',
-	ssr: false},
+
 
 ],
 
