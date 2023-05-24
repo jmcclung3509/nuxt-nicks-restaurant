@@ -1,6 +1,6 @@
 <template>
 	<div id="footer" class="footer space-y-14 ">
-		<section id="contact" class="bottom-footer flex flex-col w-full lg:flex-row lg:justify-between lg:items-start py-8 mt-14 space-y-14 lg:space-y-0">
+		<section id="contact" class="bottom-footer flex flex-col w-full lg:flex-row lg:justify-between lg:items-start pt-14 pb-8 space-y-14 lg:space-y-0">
 			<div class="contact flex basis-1 flex-col lg:basis-1/3 justify-center items-center">
 				<h4 class="lg:mb-4">Contact Us</h4>
 

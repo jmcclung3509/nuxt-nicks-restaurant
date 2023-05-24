@@ -14,25 +14,25 @@ body {
 .page-animate {
 	opacity: 0;
 	animation: fadeInPage 1s ease-in-out forwards;
-  }
-  .animate{
-	  opacity: 0;
-	  transform: translateY(30px);
-	  transition: all 1s;
-	  &.animated{
-		  opacity: 1;
-		  transform: translateY(0)
-	  }
-  }
+}
+.animate {
+	opacity: 0;
+	transform: translateY(30px);
+	transition: all 1s;
+	&.animated {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
 
-  @keyframes fadeInPage {
+@keyframes fadeInPage {
 	from {
-	  opacity: 0;
+		opacity: 0;
 	}
 	to {
-	  opacity: 1;
+		opacity: 1;
 	}
-  }
+}
 .section-container {
 	margin: 50px;
 	@screen lg {
@@ -147,7 +147,6 @@ header {
 		padding: 20px 40px 20px 45px;
 		transform: translateX(-50%) translateY(12px);
 	}
-
 }
 
 .mobile-menu {
@@ -190,7 +189,6 @@ header {
 		z-index: 100;
 		padding: 100px;
 	}
-
 }
 
 nav.main {
@@ -275,7 +273,6 @@ nav.main {
 	border-radius: 12px;
 	z-index: 1;
 	border: 10px solid #384960;
-
 }
 button {
 	background: linear-gradient(180deg, #1e90ff, #0076ce, #1560bd);
@@ -297,69 +294,75 @@ button {
 
 //MENU {
 body[class="page-menu"] {
-	.wrap-inner {
-		background-image: url("@/assets/images/menu-page/shell-background.jpeg");
-		background-size: cover;
-		background-position: cover;
-		background-repeat: no-repeat;
-		position: relative;
+	.outer-wrap {
+		background-image: linear-gradient(rgba(225,225,225, .3), rgba(225, 225,225,.3)), url("@/assets/images/background-images/codioful-formerly-gradienta-7brhZmwXn08-unsplash.jpg");
+		background-size: cover; /* Use "cover" instead of "100%" to scale the image */
+		background-position: center, center;
+		background-repeat:no-repeat;
 
-		&:after {
-			content: "";
-			background-color: rgba(255, 255, 255, 0.7);
-			top: 0;
-			left: 0;
-			width: 100%;
-			height: 100%;
-			z-index: 1;
-			position: absolute;
-		}
-	}
-
-	.menu-subsection {
-		background-color: white;
-		border: 10px solid #384960;
-		margin: auto;
-		padding: 10px;
-		z-index: 5;
-		border-radius: 9px;
-		@screen lg {
-			border: 20px solid #384960;
-			padding: 20px;
-		}
-
-		img {
+		.menu-subsection {
+			background-color: white;
+			border: 10px solid #384960;
+			margin-left: auto;
+			margin-right: auto;
 			padding: 10px;
-			border: 3px solid #f49586;
+			z-index: 5;
 			border-radius: 9px;
-			margin: auto;
 			@screen lg {
+				border: 20px solid #384960;
 				padding: 20px;
+			}
+
+			img {
+				padding: 10px;
+				border: 3px solid #9F6778;
+				border-radius: 9px;
+				margin: auto;
+				@screen lg {
+					padding: 20px;
+				}
 			}
 		}
 	}
 }
-body[class="page-about"] {
-	img{
-		border-radius: 8px;
+	body[class="page-about"] {
+		.outer-wrapper{
+			background-image: 		linear-gradient(
+				90deg,
+				rgba(198, 229, 238, 0.808),
+				rgba(238, 243, 248, 0.541)
+			), url("@/assets/images/background-images/abyan-athif-gSTNx889nC0-unsplash.jpg");
+			background-size: cover;
+			background-position: center, center;
+			background-repeat: no-repeat, repeat-y;
+		}
+
+	}
+	body[class="page-gallery"]{
+		.outer-wrapper{
+		background-image: linear-gradient(rgba(225,225,225,.8), rgba(225,225,225,.6)), url("@/assets/images/background-images/visax-DYZN-2bcdCY-unsplash.jpg");
+		background-size: cover;
+		background-position: center;
+
 	}
 }
-//component styles
-.accordion {
-	&.enabled {
-		.visible-part {
-			cursor: pointer;
+	//component styles
+	.accordion {
+		&.enabled {
+			.visible-part {
+				cursor: pointer;
+			}
+		}
+
+		&.transition {
+			overflow: hidden;
+
+			.hidden-part {
+				transition: height 0.3s ease-in-out;
+			}
 		}
 	}
 
-	&.transition {
-		overflow: hidden;
-
-		.hidden-part {
-			transition: height 0.3s ease-in-out;
-		}
-	}
-}
 
 //transitions
 .fade-enter-active,
