@@ -5,7 +5,7 @@
 			class="section-container pt-24 page-animate">
 			<div
 				class="inner md:w-[80%] lg:w-[60%] mx-auto flex flex-wrap justify-start space-y-14">
-				<h1 class="mx-auto text-6xl gradient-text">Our History</h1>
+				<h1 class="mx-auto text-6xl text-dark-blue">Our History</h1>
 				<p class="text-center">
 					Indulge in the splendor of ocean waves pounding against the
 					shore, the elegance of sea birds soaring over foamy water,
