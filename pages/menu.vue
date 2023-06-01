@@ -1,5 +1,5 @@
 <template>
-<gradient-background :startColor="[57,205,183]" a=0.3>
+
 <div class="outer-wrap w-full pb-28">
 	<div class="container w-[90%] mx-auto ">
 		<section class="animate ">
@@ -108,7 +108,7 @@
 		</section>
 	</div>
 </div>
-</gradient-background>
+
 
 </template>
 <script setup>

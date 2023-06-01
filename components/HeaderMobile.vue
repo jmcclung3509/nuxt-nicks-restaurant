@@ -10,8 +10,8 @@
 					@toggleAccordion="onAccordionClick">
 					<template #visible="visibleProps">
 						<nuxt-link
-							:external=true
-							to=""
+							:external="true"
+							to="/menu"
 							class="parent-link underline-link"
 							>Menu</nuxt-link
 						>
@@ -19,7 +19,7 @@
 					<template #hidden>
 						<div class="flex flex-col">
 							<nuxt-link
-								:external=true
+								:external="true"
 								class="child-link whitespace-nowrap"
 								to="/menu"
 								>Breakfast & Lunch</nuxt-link
@@ -87,7 +87,8 @@
 					@toggleAccordion="onAccordionClick">
 					<template #visible="visibleProps">
 						<nuxt-link
-							to=""
+							to="/gallery"
+							:external="true"
 							class="parent-link underline-link">
 							Gallery</nuxt-link
 						>

@@ -25,14 +25,6 @@ body {
 	}
 }
 
-@keyframes fadeInPage {
-	from {
-		opacity: 0;
-	}
-	to {
-		opacity: 1;
-	}
-}
 .section-container {
 	margin: 50px;
 	@screen lg {
@@ -117,7 +109,7 @@ i {
 //HEADER
 header {
 	&.main {
-		position: fixed;
+		position: absolute;
 		top: 0;
 		color: #1b1b1b;
 		width: 100%;
@@ -208,76 +200,93 @@ nav.main {
 		}
 	}
 }
+//NOTIFY BANNER
+.notify {
+	overflow: hidden;
+	background-color: rgba(72, 158, 185, 0.6);
+	@screen lg {
+		background-image: url("@/assets/images/background-images/beach-vector.jpg");
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+	}
+	.notify-close {
+		color: rgb(85, 84, 84);
+		transition: color 0.3s ease;
+		&:hover {
+			color: white;
+		}
+	}
+}
 
 //HERO
 section#hero {
-    border-bottom-width: 4px;
-    border-bottom-style: solid;
-    border-bottom-color: white;
-    border-image: linear-gradient(to right, #1e90ff, #0076ce, #1560bd) 1;
+	border-bottom-width: 4px;
+	border-bottom-style: solid;
+	border-bottom-color: white;
+	border-image: linear-gradient(to right, #1e90ff, #0076ce, #1560bd) 1;
 
-    .hero-container {
-        background: rgba(235, 235, 242, 0.3);
-        background-size: cover;
-        background-position: center;
+	.hero-container {
+		background: rgba(235, 235, 242, 0.3);
+		background-size: cover;
+		background-position: center;
 
-        .bg {
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            opacity: 0;
-            z-index: -1;
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-position: center;
-            transition: opacity 4.5s;
+		.bg {
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			opacity: 0;
+			z-index: -1;
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: center;
+			transition: opacity 4.5s;
 
-            &.active {
-                opacity: 1;
-                z-index: 0;
-            }
-        }
+			&.active {
+				opacity: 1;
+				z-index: 0;
+			}
+		}
 
-        .bg1 {
-            background-image: url("@/assets/images/homepage/saira-C5Uk-pdNXWg-unsplash.png");
-        }
+		.bg1 {
+			background-image: url("@/assets/images/homepage/saira-C5Uk-pdNXWg-unsplash.png");
+		}
 
-        .bg2 {
-            background-image: url("@/assets/images/homepage/leo-korman-VHIhK52epL0-unsplash.jpg");
-        }
+		.bg2 {
+			background-image: url("@/assets/images/homepage/leo-korman-VHIhK52epL0-unsplash.jpg");
+		}
 
-        .bg3 {
-            background-image: url("@/assets/images/homepage/datingscout-GeeiwkXf9ss-unsplash.jpg");
-        }
+		.bg3 {
+			background-image: url("@/assets/images/homepage/datingscout-GeeiwkXf9ss-unsplash.jpg");
+		}
 
-        .bg4 {
-            background-image: url("@/assets/images/gallery/views/sunset-long.jpeg");
-        }
-    }
+		.bg4 {
+			background-image: url("@/assets/images/gallery/views/sunset-long.jpeg");
+		}
+	}
 
-    .outer-container {
-        position: relative;
-        background: rgba(245, 245, 245, 0.7);
-        border-radius: 12px;
-        z-index: 1;
-        border: 10px solid #384960;
-    }
+	.outer-container {
+		position: relative;
+		background: rgba(245, 245, 245, 0.7);
+		border-radius: 12px;
+		z-index: 1;
+		border: 10px solid #384960;
+	}
 
-    button {
-        background: linear-gradient(180deg, #1e90ff, #0076ce, #1560bd);
-        opacity: 0.7;
-        transition: opacity 0.5s ease;
-        color: #fff;
+	button {
+		background: linear-gradient(180deg, #1e90ff, #0076ce, #1560bd);
+		opacity: 0.7;
+		transition: opacity 0.5s ease;
+		color: #fff;
 
-        &:hover {
-            opacity: 1;
-            color: #fff;
-        }
-    }
+		&:hover {
+			opacity: 1;
+			color: #fff;
+		}
+	}
 }
-
 
 .section-container.hours {
 	p {
@@ -291,15 +300,6 @@ section#hero {
 //MENU {
 body[class="page-menu"] {
 	.outer-wrap {
-		background-image: linear-gradient(
-				rgba(225, 225, 225, 0.3),
-				rgba(225, 225, 225, 0.3)
-			),
-			url("@/assets/images/background-images/codioful-formerly-gradienta-7brhZmwXn08-unsplash.jpg");
-		background-size: cover; /* Use "cover" instead of "100%" to scale the image */
-		background-position: center, center;
-		background-repeat: no-repeat;
-
 		.menu-subsection {
 			background-color: white;
 			border: 10px solid #384960;
@@ -340,15 +340,6 @@ body[class="page-about"] {
 }
 
 body[class="page-gallery"] {
-	.outer-wrapper {
-		background-image: linear-gradient(
-			rgba(225, 225, 225, 0.3),
-			rgba(225, 225, 225, 0.3)
-		),
-		url("@/assets/images/background-images/neutral-bg.png");
-		background-size: cover;
-		background-position: center;
-	}
 }
 //component styles
 .accordion {
@@ -377,4 +368,25 @@ body[class="page-gallery"] {
 .fade-leave-to {
 	opacity: 0;
 }
+.banner-open-close-enter-active,
+.banner-open-close-leave-active {
+	transition: height 0.5s ease-in-out;
+}
+.banner-open-close-enter-from,
+.banner-open-close-leave-to {
+	height: 0;
+}
+.banner-open-close-enter-to,
+.banner-open-close-leave-from {
+	height: 100px;
+}
+
 //animation
+@keyframes fadeInPage {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}

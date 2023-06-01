@@ -29,7 +29,8 @@
 								">
 								<template #visible="visibleProps">
 									<nuxt-link
-										to=""
+											to="/menu#"
+												:external="true"
 										class="parent-link underline-link"
 										>Menu</nuxt-link
 									>
@@ -171,12 +172,7 @@
 </template>
 
 <script setup>
-// const props = defineProps({
-// 	mobileMenuOpen: {
-// 		type: Boolean,
-// 		default: false,
-// 	},
-// });
+
 const data = reactive({
 	isMobileOpen: false,
 
@@ -195,12 +191,8 @@ const onMobileMenuClick = (payload) => {
 
 const mobileNavIcon = computed(() => {
 	return data.isMobileOpen ? "bi-x" : "bi-list";
-	// console.log(data.isMobileOpen, props.mobileMenuOpen);
-	// return  props.mobileMenuOpen ? "bi-x" : "bi-list";
+
 });
 
-// const onMobileMenuClosed = () => {
-// 	data.isMobileOpen = props.mobileMenuOpen
 
-// };
 </script>
