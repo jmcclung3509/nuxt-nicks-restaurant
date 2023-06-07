@@ -2,9 +2,9 @@
 	<div class="outer-wrapper w-full pb-28">
 		<section
 			id="history"
-			class="section-container pt-24 page-animate">
+			class="section-container  page-animate">
 			<div
-				class="inner md:w-[80%] lg:w-[60%] mx-auto flex flex-wrap justify-start space-y-14">
+				class="inner md:w-[80%] mx-auto flex flex-wrap justify-start space-y-14">
 				<h1 class="mx-auto text-center text-6xl text-dark-blue">Our History</h1>
 				<p class="text-center">
 					Indulge in the splendor of ocean waves pounding against the

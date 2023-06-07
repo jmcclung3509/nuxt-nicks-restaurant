@@ -109,7 +109,7 @@ i {
 //HEADER
 header {
 	&.main {
-		position: absolute;
+
 		top: 0;
 		color: #1b1b1b;
 		width: 100%;
@@ -205,10 +205,16 @@ nav.main {
 	overflow: hidden;
 	background-color: rgba(72, 158, 185, 0.6);
 	@screen lg {
-		background-image: url("@/assets/images/background-images/beach-vector.jpg");
+		background: url("@/assets/images/background-images/yuriy-kovalev-nN1HSDtKdlw-unsplash.jpg");
 		background-size: cover;
 		background-position: center;
 		background-repeat: no-repeat;
+		max-height: 100px;
+		.inner-wrapper{
+			background: rgba(245, 245, 245, 0.3);
+			border-radius: 6px;
+
+		}
 	}
 	.notify-close {
 		color: rgb(85, 84, 84);
@@ -325,22 +331,9 @@ body[class="page-menu"] {
 		}
 	}
 }
-body[class="page-about"] {
-	.outer-wrapper {
-		background-image: linear-gradient(
-				90deg,
-				rgba(198, 229, 238, 0.808),
-				rgba(238, 243, 248, 0.541)
-			),
-			url("@/assets/images/background-images/abyan-athif-gSTNx889nC0-unsplash.jpg");
-		background-size: cover;
-		background-position: center, center;
-		background-repeat: no-repeat, repeat-y;
-	}
-}
 
-body[class="page-gallery"] {
-}
+
+
 //component styles
 .accordion {
 	&.enabled {

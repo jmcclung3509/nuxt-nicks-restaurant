@@ -1,6 +1,6 @@
 <template>
 	<header
-		class="main relative flex bg-grey-900 text-grey-100 py-3.5 px-6 shadow justify-between w-full"
+		class="main sticky flex bg-grey-900 text-grey-100 py-3.5 px-6 shadow justify-between w-full"
 		@mobileMenuClosed="onMobileMenuClosed">
 		<div class="container m-auto flex justify-between items-end">
 			<div class="left">

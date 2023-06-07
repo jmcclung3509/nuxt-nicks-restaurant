@@ -1,6 +1,6 @@
 <template>
 <div class="outer-wrapper w-full">
-	<div class="container mx-auto space-y-24 mt-24 pt-24 pb-24 page-animate">
+	<div class="container mx-auto space-y-24 mt-24  pb-24 page-animate">
 		<h1 class="text-6xl text-dark-blue text-center">Gallery</h1>
 		<section
 			id="views"

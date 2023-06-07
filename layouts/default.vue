@@ -7,9 +7,9 @@
 				</div>
 				</Transition>
 			<div
-				class=" relative flex main-page page-animate"
+				class=" relative flex flex-col main-page page-animate"
 				:class="{ 'mobile-menu-open': data.isMobileOpen }">
-				<Header @mobileMenuClick="onMobileMenuClick"  />
+				<Header  @mobileMenuClick="onMobileMenuClick"  />
 
 				<div class="inner w-full overflow-hidden">
 					<slot />
