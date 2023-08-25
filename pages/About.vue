@@ -5,8 +5,8 @@
 			class="section-container  page-animate">
 			<div
 				class="inner md:w-[80%] mx-auto flex flex-wrap justify-start space-y-14">
-				<h1 class="mx-auto text-center text-6xl text-dark-blue">Our History</h1>
-				<p class="text-center">
+				<h1 class="mx-auto text-center text-6xl text-dark-blue">Our story</h1>
+				<p class="text-center ">
 					Indulge in the splendor of ocean waves pounding against the
 					shore, the elegance of sea birds soaring over foamy water,
 					and the allure of sunbeams glimmering on the back of a gray
@@ -19,7 +19,7 @@
 					<div class="outer-container">
 							<img
 								src="@/assets/images/about/rockaway-bw.png"
-								class="mx-auto"
+								class="mx-auto rounded-2xl"
 								alt="Rockaway beach circa 1920" />
 					</div>
 				</div>
@@ -38,7 +38,7 @@
 					<div class="outer-container">
 					<img
 						src="@/assets/images/about/history-one.jpg"
-						class="img-fluid"
+						class="img-fluid rounded-2xl"
 						alt="Rockaway Cafe" />
 					</div>
 				</div>
@@ -60,7 +60,7 @@
 					<div class="outer-container">
 					<img
 						src="@/assets/images/about/history-two.jpg"
-						class="img-fluid"
+						class="img-fluid rounded-2xl"
 						alt="Nick's bar black and white photo" /> </div>
 				</div>
 				<p class="text-center">
@@ -87,7 +87,7 @@
 					<div class="outer-container">
 					<img
 						src="@/assets/images/about/nick-friend-celebrating.jpg"
-						class="img-fluid"
+						class="img-fluid rounded-2xl"
 						alt="Nick Gust celebrating with friend" />
 					</div>
 				</div>

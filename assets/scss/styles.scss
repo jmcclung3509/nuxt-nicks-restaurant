@@ -109,7 +109,6 @@ i {
 //HEADER
 header {
 	&.main {
-
 		top: 0;
 		color: #1b1b1b;
 		width: 100%;
@@ -202,20 +201,9 @@ nav.main {
 }
 //NOTIFY BANNER
 .notify {
-	overflow: hidden;
-	background-color: rgba(72, 158, 185, 0.6);
-	@screen lg {
-		background: url("@/assets/images/background-images/yuriy-kovalev-nN1HSDtKdlw-unsplash.jpg");
-		background-size: cover;
-		background-position: center;
-		background-repeat: no-repeat;
-		max-height: 100px;
-		.inner-wrapper{
-			background: rgba(245, 245, 245, 0.3);
-			border-radius: 6px;
 
-		}
-	}
+	background-color: rgba(72, 158, 185, 0.6);
+
 	.notify-close {
 		color: rgb(85, 84, 84);
 		transition: color 0.3s ease;
@@ -294,15 +282,39 @@ section#hero {
 	}
 }
 
-.section-container.hours {
-	p {
-		font-size: 1.2rem;
+section.hours {
+	border-bottom-width: 4px;
+	border-bottom-style: solid;
+	border-bottom-color: white;
+	border-image: linear-gradient(to right, #1e90ff, #0076ce, #1560bd) 1;
+	@screen lg{
+	padding-bottom: 100px;
+	background-image: radial-gradient(rgba(#fff, 0.8), rgba(#fff, 0.7)),
+		linear-gradient(
+			180deg,
+			rgba(#1e90ff, 0.3),
+			rgba(#0076ce, 0.3),
+			rgba(#1560bd, 0.3)
+		),
+		url("@/assets/images/homepage/cocktail.jpeg");
+	background-size: cover, cover, cover;
+	background-repeat: no-repeat;
+	background-position: center, center, center;
 	}
-	h2 {
-		border-bottom: 2px solid #00356b;
+
+	.section-container {
+		padding-top: 100px;
+		padding-bottom: 100px;
+		margin-top: 0;
+		margin-bottom: 0;
+		p {
+			font-size: 1.2rem;
+		}
+		h2 {
+			border-bottom: 2px solid #00356b;
+		}
 	}
 }
-
 //MENU {
 body[class="page-menu"] {
 	.outer-wrap {
@@ -332,8 +344,15 @@ body[class="page-menu"] {
 	}
 }
 
+//ABOUT PAGE
+body[class="page-about"] {
+	.section-container{
+	img{
+		border: 10px solid #00356b;
 
-
+	}
+}
+}
 //component styles
 .accordion {
 	&.enabled {

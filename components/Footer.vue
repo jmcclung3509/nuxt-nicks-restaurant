@@ -28,7 +28,7 @@
 		</section>
 
 		<div class="author flex justify-center w-full">
-			<p class="text-[.8rem]"> Jessica Turner || Website Design & Development</p>
+			<p class="text-[.8rem]"> Jessica Turner | 2023 </p>
 		</div>
 	</div>
 
