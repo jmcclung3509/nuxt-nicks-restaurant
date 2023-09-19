@@ -6,7 +6,7 @@
 			<div
 				class="inner md:w-[80%] mx-auto flex flex-wrap justify-start space-y-14">
 				<h1 class="mx-auto text-center text-6xl text-dark-blue">Our story</h1>
-				<p class="text-center ">
+				<p class="text-left ">
 					Indulge in the splendor of ocean waves pounding against the
 					shore, the elegance of sea birds soaring over foamy water,
 					and the allure of sunbeams glimmering on the back of a gray
@@ -24,7 +24,7 @@
 					</div>
 				</div>
 
-				<p class="text-center">
+				<p class="text-left">
 					Stalios Karagianis, born in Macedonia, Greece in 1886,
 					boarded a ship named the Konstantinos at the age of twenty
 					and embarked on a journey to America. After arriving in New
@@ -42,7 +42,7 @@
 						alt="Rockaway Cafe" />
 					</div>
 				</div>
-				<p class="text-center">
+				<p class="text-left">
 					As many immigrants coming to America did at the time,
 					Karagianis americanized his name, changing it to Charles
 					Gust. After a few years of working and saving, he sent for
@@ -63,7 +63,7 @@
 						class="img-fluid rounded-2xl"
 						alt="Nick's bar black and white photo" /> </div>
 				</div>
-				<p class="text-center">
+				<p class="text-left">
 					Charlie Gust's dining spot became one of the most unique and
 					enjoyable locations on the Pacific Coast, where he served
 					the public with gracious hospitality and fine dining. Today,
@@ -75,9 +75,9 @@
 					his home.
 				</p>
 
-				<div class="salutation space-y-4 mx-auto">
-					<p class="w-full text-center mb-2">Our Best Wishes,</p>
-					<p class="text-center w-full mt-2">
+				<div class="salutation space-y-4 ">
+					<p class="w-full text-left mb-2">Our Best Wishes,</p>
+					<p class="text-left w-full mt-2">
 						Charles, Anastasia, Nick, Lorraine, Kathy, Chuck and
 						Lena.
 					</p>
