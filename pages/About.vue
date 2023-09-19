@@ -1,5 +1,5 @@
 <template>
-	<div class="outer-wrapper w-full pb-28">
+	<div class="outer-wrapper w-full pb-28 max-w-[1280px] mx-auto">
 		<section
 			id="history"
 			class="section-container  page-animate">

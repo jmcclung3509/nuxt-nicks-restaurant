@@ -1,8 +1,8 @@
 <template>
 	<section
 		id="hours"
-		class="hours space-y-14 animate">
-		<div class="section-container">
+		class="hours space-y-14  animate mx-auto flex justify-center">
+		<div class="section-container max-w-[1280px] mx-auto pt-24">
 			<h1
 				class="mb-[50px] lg:mb-[100px] text-4xl lg:text-5xl w-full flex flex-start items-centertext-[#004170]">
 				HOURS

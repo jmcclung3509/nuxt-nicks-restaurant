@@ -1,6 +1,6 @@
 <template>
 
-<div class="outer-wrap w-full pb-28">
+<div class="outer-wrap w-full pb-28 max-w-[1280px] mx-auto">
 	<div class="container w-[90%] mx-auto ">
 		<section class="animate ">
 			<div class="container mx-auto  p-14 gradient-section">
