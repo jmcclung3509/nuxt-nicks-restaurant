@@ -10,11 +10,7 @@ body {
 	font-family: "Montserrat", sans-serif;
 	width: 100%;
 	color: #384960;
-
-
-
 }
-
 
 .page-animate {
 	opacity: 0;
@@ -206,7 +202,6 @@ nav.main {
 }
 //NOTIFY BANNER
 .notify {
-
 	background-color: rgba(72, 158, 185, 0.6);
 
 	.notify-close {
@@ -288,24 +283,26 @@ section#hero {
 }
 
 section.hours {
+	position: relative;
+
 	border-bottom-width: 4px;
 	border-bottom-style: solid;
 	border-bottom-color: white;
 	border-image: linear-gradient(to right, #1e90ff, #0076ce, #1560bd) 1;
-	@screen lg{
-	padding-bottom: 100px;
-	background-image: radial-gradient(rgba(#fff, 0.8), rgba(#fff, 0.7)),
-		linear-gradient(
-			180deg,
-			rgba(#1e90ff, 0.3),
-			rgba(#0076ce, 0.3),
-			rgba(#1560bd, 0.3)
-		),
-		url("@/assets/images/homepage/cocktail.jpeg");
-	background-size: cover, cover, cover;
-	background-repeat: no-repeat;
-	background-position: center, center, center;
+	@screen lg {
+		padding-bottom: 100px;
+		background-image: url("@/assets/images/transparent-background-short.png"),radial-gradient(rgba(#fff, 0.8), rgba(#fff, 0.7)),
+			linear-gradient(
+				180deg,
+				rgba(#1e90ff, 0.3),
+				rgba(#0076ce, 0.3),
+				rgba(#1560bd, 0.3)
+			);
+		background-size: cover, cover, cover;
+		background-repeat: no-repeat;
+		background-position: center, center, center;
 	}
+
 
 	.section-container {
 		padding-top: 100px;
@@ -322,6 +319,25 @@ section.hours {
 }
 //MENU {
 body[class="page-menu"] {
+	.inner {
+		position: relative;
+		&:after {
+			content: "";
+			background-image: url("@/assets/images/transparent-bckground.png");
+			background-size: cover;
+			background-position: center top;
+			background-repeat: no-repeat;
+			position: absolute;
+
+			bottom: 0;
+			top: 0;
+			left: 0;
+			right: 0;
+			z-index: 1;
+			pointer-events: none;
+		}
+	}
+
 	.outer-wrap {
 		.menu-subsection {
 			background-color: white;
@@ -331,6 +347,8 @@ body[class="page-menu"] {
 			padding: 10px;
 			z-index: 5;
 			border-radius: 9px;
+			position: relative;
+			z-index: 200;
 			@screen lg {
 				border: 20px solid #384960;
 				padding: 20px;
@@ -351,12 +369,31 @@ body[class="page-menu"] {
 
 //ABOUT PAGE
 body[class="page-about"] {
-	.section-container{
-	img{
-		border: 10px solid #00356b;
+	.main-page {
+		position: relative;
+		&:after {
+			content: "";
+			background-image: url("@/assets/images/transparent-bckground.png");
+			background-size: cover;
+			background-position: center top;
+			background-repeat: no-repeat;
+			position: absolute;
 
+			bottom: 0;
+			top: 0;
+			left: 0;
+			right: 0;
+			z-index: 1;
+			pointer-events: none;
+		}
 	}
-}
+	.section-container {
+		position: relative;
+		z-index: 200;
+		img {
+			border: 10px solid #00356b;
+		}
+	}
 }
 //component styles
 .accordion {
