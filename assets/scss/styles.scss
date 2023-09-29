@@ -5,7 +5,7 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
 
 body {
-	background-color: #f6faff;
+	background-color: #ddebf3;
 	color: rgba(245, 245, 245, 0.2);
 	font-family: "Montserrat", sans-serif;
 	width: 100%;
@@ -96,13 +96,18 @@ i {
 		position: absolute;
 		bottom: -2px;
 		left: 0;
-		background: linear-gradient(90deg, #1e90ff, #0076ce, #1560bd);
+		background: linear-gradient(90deg,  #1edbff, #1e90ff);
 		transition: width 0.5s ease;
 	}
 	&:hover {
 		&:after {
 			width: 100%;
 			height: 2px;
+		}
+	}
+	&.dark-underline{
+		&:after{
+			background: linear-gradient(90deg, #1e90ff, #0076ce, #1560bd);
 		}
 	}
 }
@@ -186,13 +191,21 @@ nav.main {
 
 //FOOTER
 .footer {
-	// background-color: rgba(72, 158, 185, 0.6);
-	i.bi-facebook {
-		color: #00356b;
+	position:relative;
+	z-index: 100;
+	background-color: #374960;
+	color: #f6faff;
+	p, a{
+		color: #f6faff;
+	}
+
+
+	i.bi-facebook{
+		color: #f6faff;
 		transition: all 0.3s ease;
 
 		&:hover {
-			background: linear-gradient(90deg, #1e90ff, #0076ce, #1560bd);
+			background: linear-gradient(45deg,  #1edbff,#1e90ff);
 			-webkit-background-clip: text;
 			-moz-background-clip: text;
 			background-clip: text;
@@ -320,22 +333,23 @@ section.hours {
 //MENU {
 body[class="page-menu"] {
 	.inner {
-		position: relative;
-		&:after {
-			content: "";
-			background-image: url("@/assets/images/transparent-bckground.png");
-			background-size: cover;
-			background-position: center top;
-			background-repeat: no-repeat;
-			position: absolute;
+		// position: relative;
+		// &:after {
+		// 	content: "";
+		// 	// background-image: url("@/assets/images/transparent-bckground.png");
+		// 	background-image: url("@/assets/images/background-images/vertical-waves-2.png");
+		// 	background-size: cover;
+		// 	background-position: center top;
+		// 	background-repeat: no-repeat;
+		// 	position: absolute;
 
-			bottom: 0;
-			top: 0;
-			left: 0;
-			right: 0;
-			z-index: 1;
-			pointer-events: none;
-		}
+		// 	bottom: 0;
+		// 	top: 0;
+		// 	left: 0;
+		// 	right: 0;
+		// 	z-index: -1;
+		// 	pointer-events: none;
+		// }
 	}
 
 	.outer-wrap {
@@ -370,22 +384,22 @@ body[class="page-menu"] {
 //ABOUT PAGE
 body[class="page-about"] {
 	.main-page {
-		position: relative;
-		&:after {
-			content: "";
-			background-image: url("@/assets/images/transparent-bckground.png");
-			background-size: cover;
-			background-position: center top;
-			background-repeat: no-repeat;
-			position: absolute;
+		// position: relative;
+		// &:after {
+		// 	content: "";
+		// 	background-image: radial-gradient(rgba(#fff, .6), rgba(#fff, 0.6)), linear-gradient(220deg,rgba(#0FBAFF, .3), rgba(#489EB9, .3), rgba(#0D51A7, .3) );
+		// 	background-size: cover, cover;
+		// 	background-position: center center;
+		// 	background-repeat: no-repeat;
+		// 	position: absolute;
 
-			bottom: 0;
-			top: 0;
-			left: 0;
-			right: 0;
-			z-index: 1;
-			pointer-events: none;
-		}
+		// 	bottom: 0;
+		// 	top: 0;
+		// 	left: 0;
+		// 	right: 0;
+		// 	z-index: 1;
+		// 	pointer-events: none;
+		// }
 	}
 	.section-container {
 		position: relative;

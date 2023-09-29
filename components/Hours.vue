@@ -62,7 +62,7 @@
 				class="w-full space-y-4 extras flex items-center justify-content flex-col mt-[100px] lg:mt-[200px]">
 				<div class="text-center space-y-4">
 					<nuxt-link to="/menu#music">
-						<span class="underline-link gradient-text text-3xl">
+						<span class="underline-link dark-underline gradient-text text-3xl">
 							Live Music
 						</span>
 					</nuxt-link>
@@ -70,7 +70,7 @@
 				</div>
 				<div class="text-center space-y-4">
 					<nuxt-link to="/menu#happy-hour"
-						><span class="underline-link text-3xl gradient-text">
+						><span class="underline-link dark-underline text-3xl gradient-text">
 							Happy Hour
 						</span>
 					</nuxt-link>

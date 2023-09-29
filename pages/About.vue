@@ -46,7 +46,7 @@
 					As many immigrants coming to America did at the time,
 					Karagianis americanized his name, changing it to Charles
 					Gust. After a few years of working and saving, he sent for
-					his wife, Anastasia, to join him. Togethe, they built a
+					his wife, Anastasia, to join him. Together, they built a
 					house in Daly City and raised four children. In 1927,
 					Karagianis purchased a property on the water's edge at
 					Rockaway Beach, where he established a business selling

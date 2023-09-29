@@ -7,7 +7,7 @@
 				<p>
 					<label for="phone">650-359-3900</label>
 				</p>
-				<p><a href="mailto:nicksrockaway@yahoo.com">nicksrockaway@yahoo.com</a>
+				<p><a class="underline-link" href="mailto:nicksrockaway@yahoo.com">nicksrockaway@yahoo.com</a>
 				</p>
 			</div>
 			<div class="find-us flex basis-1 flex-col lg:basis-1/3 justify-center items-center">
