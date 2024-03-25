@@ -2,7 +2,7 @@
 	<section id="hero" class="animate"
 	>
 
-			<div class="hero-container flex justify-center items-center  h-[100vh] w-[100vw]">
+			<div class="hero-container flex justify-center items-center  h-[90vh] w-[100vw]">
 				<div class="bg1 bg" :class="{ active: data.activeIndex === 0 }"></div>
 				<div class="bg2 bg" :class="{ active: data.activeIndex === 1 }"></div>
 				<div class="bg3 bg" :class="{ active: data.activeIndex === 2 }"></div>

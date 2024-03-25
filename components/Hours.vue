@@ -1,82 +1,53 @@
 <template>
-	<section
-		id="hours"
-		class="hours space-y-14  animate mx-auto flex justify-center">
-		<div class="section-container max-w-[1280px] mx-auto pt-24">
-			<h1
-				class="mb-[50px] lg:mb-[100px] text-4xl lg:text-5xl w-full flex flex-start items-centertext-[#004170]">
-				HOURS
-			</h1>
-			<div
-				class="hours-container w-full flex flex-col justify-between lg:flex-row space-y-14 lg:space-y-0">
-				<div
-					class="hours restaurant-hours flex flex-wrap justify-start basis-1 lg:basis-1/3 space-y-7">
-					<h2 class="w-full text-3xl pb-4">Restaurant</h2>
-					<div
-						class="hour-content-container restaurant-content flex flex-col justify-start w-full space-y-7">
-						<div class="flex justify-between">
-							<p class="text-left">Mon & Thurs:</p>
-							<p class="text-right">11am - 9pm</p>
-						</div>
-						<div class="flex justify-between">
-							<p class="text-left">Tues & Wed</p>
-							<p class="text-right red">Closed</p>
-						</div>
-						<div class="flex justify-between">
-							<p class="text-left">Fri & Sat:</p>
-							<p class="text-right">10am - 10pm</p>
-						</div>
-						<div class="flex justify-between">
-							<p class="text-left">Sun</p>
-							<p class="text-right">10am -9pm</p>
-						</div>
-					</div>
-				</div>
-				<div
-					class="hours bar-hours flex flex-wrap justify-start basis-1 lg:basis-1/3 space-y-7">
-					<h2 class="w-full text-3xl pb-4 text-right">
-						Bar & Lounge
-					</h2>
-					<div
-						class="hour-content-container restaurant-content flex flex-col justify-start w-full space-y-7">
-						<div class="flex justify-between">
-							<p class="text-left">Mon & Thurs:</p>
-							<p class="text-right">11am - 11pm</p>
-						</div>
-						<div class="flex justify-between">
-							<p class="text-left">Tues & Wed</p>
-							<p class="text-right red">Closed</p>
-						</div>
-						<div class="flex justify-between">
-							<p class="text-left">Fri & Sat:</p>
-							<p class="text-right">10am - 11pm</p>
-						</div>
-						<div class="flex justify-between">
-							<p class="text-left">Sun</p>
-							<p class="text-right">10am -10pm</p>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div
-				class="w-full space-y-4 extras flex items-center justify-content flex-col mt-[100px] lg:mt-[200px]">
-				<div class="text-center space-y-4">
-					<nuxt-link to="/menu#music">
-						<span class="underline-link dark-underline gradient-text text-3xl">
-							Live Music
-						</span>
-					</nuxt-link>
-					<p class="text-2xl">Friday & Saturday 7-11pm</p>
-				</div>
-				<div class="text-center space-y-4">
-					<nuxt-link to="/menu#happy-hour"
-						><span class="underline-link dark-underline text-3xl gradient-text">
-							Happy Hour
-						</span>
-					</nuxt-link>
-					<p class="text-2xl">Monday & Thursday 3-6pm</p>
-				</div>
-			</div>
-		</div>
-	</section>
+<section id="hours" class=" hours space-y-14 animate mx-auto " >
+  <div class="inner-wrapper section-container mx-auto flex flex-col lg:flex-row justify-center lg:items-start lg:gap-24 items-center">
+  <div class="sidebar w-full lg:w-1/2 space-y-7  flex flex-col  justify-start  ">
+
+    <h2 class="caps border-none ">Dine. Dance. Romance.</h2>
+    <p>
+      Immerse yourself in the coastal charm of Nicks Restaurant, where every visit is an unforgettable experience.Indulge in classic seafood cuisine with a modern twist, complemented by a curated selection of local California wines, craft beers, and specialty cocktails. With breathtaking views of the Pacific Ocean, Nicks creates a welcoming ambiance that seamlessly blends retro accents with contemporary comfort, inviting guests to unwind and savor the moment.
+    </p>
+    <p>
+      Stepping into Nicks is embarking on a culinary journey that transcends time and tradition. Whether you're savoring fresh seafood, succulent steaks, or indulging in Italian and Mediterranean fare, every dish is crafted with care and precision. Join us for live music and dancing on weekends, and let the Gust family's century-long commitment to excellence ensure that your dining experience at Nicks is nothing short of extraordinary.
+    </p>
+
+  </div>
+  <div class="sidebar w-full lg:w-[30%] flex flex-col items-start">
+    <h2 class="border-none">Hours</h2>
+    <div class="flex flex-col">
+      <h3>Dining Room</h3>
+      <div class="hours-container space-y-2 flex flex-col">
+        <p class="hours text-sm">Monday & Thursday: 11am - 9pm</p>
+        <p class="hours text-sm">Friday: 11am - 9:30pm</p>
+        <p class="hours text-sm">Saturday: 10am - 9:30pm</p>
+        <p class="hours text-sm">Sunday: 10am - 8:30pm</p>
+        <p class="hours text-sm">Tuesday & Wednesday: <span class="closed text-normal">CLOSED</span></p>
+      </div>
+    </div>
+    <div class="flex flex-col">
+      <h3>Bar & Lounge</h3>
+      <div class="hours-container space-y-2 flex flex-col">
+        <p class="hours text-sm">Sunday, Monday & Thursday: until 10pm</p>
+        <p class="hours text-sm">Friday - Saturday: until 11pm</p>
+
+      </div>
+    </div>
+    <div class="flex flex-col">
+      <h3>Happy Hour</h3>
+      <div class="hours-container space-y-2 flex flex-col">
+        <p class="hours text-sm">Monday & Thursday: 3pm - 5pm</p>
+        <a class="underline-link blue caps" href="/menu#happy-hour" target="_blank">Happy hour menu</a>
+
+      </div>
+    </div>
+    <div class="flex flex-col">
+      <h3>Live Music</h3>
+      <div class="hours-container space-y-2 flex flex-col">
+        <p class="hours text-sm">Monday - Thursday: 11am - 9pm</p>
+        <p class="hours text-sm">Friday - Saturday: 7pm - 11pm</p>
+        <a class="underline-link blue caps" href="/menu#music" target="_blank">Music calendar</a>
+      </div>
+    </div>
+  </div></div>
+</section>
 </template>
