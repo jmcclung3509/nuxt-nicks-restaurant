@@ -6,7 +6,7 @@
 			<div
 				class="inner  mx-auto flex flex-wrap justify-start space-y-24">
 				<h1 class="mx-auto text-center text-6xl text-dark-blue">Our story</h1>
-				<div class="flex flex-col lg:flex-row lg:gap-14 justify-center-items-center  space-y-7 lg:space-y-0">
+				<div class="flex flex-col lg:flex-row lg:gap-14 justify-center items-center  space-y-7 lg:space-y-0">
 				<p class="text-left w-full lg:basis-1/2 ">
 					Indulge in the splendor of ocean waves pounding against the
 					shore, the elegance of sea birds soaring over foamy water,
@@ -25,7 +25,7 @@
 					</div>
 				</div>
 				</div>
-				<div class="flex flex-col lg:flex-row lg:flex-row-reverse lg:gap-14 justify-center-items-center  space-y-7 lg:space-y-0">
+				<div class="flex flex-col lg:flex-row lg:flex-row-reverse lg:gap-14 justify-center items-center  space-y-7 lg:space-y-0">
 					<p class="text-left w-full lg:basis-1/2 ">
 					Stalios Karagianis, born in Macedonia, Greece in 1886,
 					boarded a ship named the Konstantinos at the age of twenty
@@ -45,7 +45,7 @@
 					</div>
 				</div>
 				</div>
-				<div class="flex flex-col lg:flex-row lg:gap-14 justify-center-items-center  space-y-7 lg:space-y-0">
+				<div class="flex flex-col lg:flex-row lg:gap-14 justify-center items-center  space-y-7 lg:space-y-0">
 					<p class="text-left w-full lg:basis-1/2 ">
 					As many immigrants coming to America did at the time,
 					Karagianis americanized his name, changing it to Charles
@@ -68,7 +68,7 @@
 						alt="Nick's bar black and white photo" /> </div>
 				</div>
 				</div>
-				<div class="flex flex-col space-y-7 lg:space-y-0 lg:flex-row lg:flex-row-reverse lg:gap-14 justify-center-items-center  space-y-7 lg:space-y-0">
+				<div class="flex flex-col space-y-7 lg:space-y-0 lg:flex-row lg:flex-row-reverse lg:gap-14 justify-center items-center  space-y-7 lg:space-y-0">
 					<p class="text-left w-full lg:basis-1/2 ">
 					Charlie Gust's dining spot became one of the most unique and
 					enjoyable locations on the Pacific Coast, where he served
