@@ -22,6 +22,7 @@
     "@nuxtjs/style-resources": "^1.2.1",
     "@nuxtjs/tailwindcss": "^6.2.0",
     "consola": "^3.0.1",
-    "vue": "^3.2.47"
+    "vue": "^3.2.47",
+    "webpack": "^5.91.0"
   }
 }

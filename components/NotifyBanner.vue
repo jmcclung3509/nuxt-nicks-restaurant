@@ -1,18 +1,24 @@
 <template>
 	<div
-		class="py-4 ">
+		class="py-4 z-100  ">
 
-		<div class="inner-banner-wrapper px-4 flex justify-center items-center">
+		<div class="inner-banner-wrapper px-4 flex justify-center items-center min-h-[120px] ">
 
-				<div class="flex justify-center items-center py-7">
-					<p class="font-bold">
-						Nick's car show is back!  Thursday June, 8, 2023
+				<div class="flex justify-center items-center py-7 space-y-4 flex-col absolute ">
+											<p class="font-bold">
+				June 20, 2024</p>
+				<p class="font-bold">
+
+				Thursday Night Lights is back!
 					</p>
+
+
+
 				</div>
 
 
 			<i
-				class="icon-close icon cursor-pointer text-5xl z-2000 bi-x"
+				class="icon-close icon cursor-pointer text-5xl z-2000 bi-x right-0 top-0 absolute"
 				@click="$emit('notify-close')"></i>
 		</div>
 	</div>
