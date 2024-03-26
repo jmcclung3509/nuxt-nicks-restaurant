@@ -2,11 +2,14 @@
 	<section id="hero" class="animate"
 	>
 
-			<div class="hero-container flex justify-center items-center  h-[90vh] w-[100vw]">
+			<div class="hero-container flex justify-center items-center  h-[95vh] w-[100vw]">
 				<div class="bg1 bg" :class="{ active: data.activeIndex === 0 }"></div>
 				<div class="bg2 bg" :class="{ active: data.activeIndex === 1 }"></div>
 				<div class="bg3 bg" :class="{ active: data.activeIndex === 2 }"></div>
 				<div class="bg4 bg" :class="{ active: data.activeIndex === 3 }"></div>
+				<div class="bg5 bg" :class="{ active: data.activeIndex === 4 }"></div>
+				<div class="bg6 bg" :class="{ active: data.activeIndex === 5 }"></div>
+
 
 				<div
 					class="outer-container flex justify-center items-center  w-[80%] sm:w-[70%] lg:w-[65%] xl:w-[60%] min-h-fit py-14 max-w-screen-lg">
@@ -38,7 +41,7 @@ const data = reactive({
 
 const setActiveIndex = () => {
 	setInterval(() => {
-		data.activeIndex = (data.activeIndex + 1) % 4
+		data.activeIndex = (data.activeIndex + 1) % 6
 	},6000)
 }
 
@@ -46,38 +49,3 @@ onMounted(() => {
 	setActiveIndex()
 })
 </script>
-
-<!-- <style  lang="scss">
-
-.bg {
-	position: absolute;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	opacity: 0;
-	z-index: -1;
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center;
-	transition: opacity 4.5s;
-
-
-&.bg1 {
-	background-image: url("@/assets/images/homepage/saira-C5Uk-pdNXWg-unsplash.png");
-}
-
-&.bg2 {
-	background-image: url("@/assets/images/homepage/leo-korman-VHIhK52epL0-unsplash.jpg");
-}
-
-&.bg3 {
-	background-image: url("@/assets/images/homepage/jairo-gonzalez-vGP-QLJu9LM-unsplash.jpg");
-}
-
-&.active {
-	opacity: 1;
-	z-index: 0;
-}
-}
-</style> -->

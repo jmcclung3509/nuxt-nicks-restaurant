@@ -1,10 +1,10 @@
 <template>
   <section id="hours" class="hours space-y-14 animate mx-auto">
     <div
-      class="inner-wrapper section-container mx-auto flex flex-col lg:flex-row justify-center lg:items-start lg:gap-24 items-center"
+      class="inner-wrapper section-container mx-auto flex flex-col lg:flex-row justify-center lg:justify-around lg:items-start items-center"
     >
       <div
-        class="sidebar w-full lg:w-1/2 space-y-7 flex flex-col justify-start"
+        class="sidebar w-full lg:w-1/2 space-y-7 max-w-[650px] flex flex-col justify-start"
       >
         <h2 class="caps border-none">Dine. Dance. Romance.</h2>
         <p>

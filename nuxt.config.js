@@ -12,7 +12,7 @@ export default {
       {
         rel: "icon",
         type: "image/png",
-        href: "/static/images/favicon.ico",
+        href: "/static/images/favicon.png",
       },
       {
         href: "https://fonts.googleapis.com/css2?family=Oswald&display=swap",
