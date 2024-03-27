@@ -33,8 +33,6 @@
 const route = useRoute();
 const config = useRuntimeConfig()
 
-console.log('config', config)
-
 const host = config.public.BASE_API_BROWSER_URL;
 const title = "Nick's Restaurant";
 const description ="Specializing in fresh seafood and prime-cut steaks, the Gust family has been welcoming guests from all over the world since 1927.";
