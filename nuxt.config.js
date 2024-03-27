@@ -1,6 +1,5 @@
 export default {
   head: {
-
     title: "Nicks Restaurant",
     charset: "utf-8",
     meta: [
@@ -10,11 +9,7 @@ export default {
       },
     ],
     link: [
-      {
-        rel: "icon",
-        type: "image/png",
-        href: "/static/images/favicon.png",
-      },
+      { rel: "icon", type: "image/x-icon", href: "/favicon.ico" },
       {
         href: "https://fonts.googleapis.com/css2?family=Oswald&display=swap",
         rel: "stylesheet",
@@ -74,5 +69,4 @@ export default {
   experimental: {
     payloadExtraction: false,
   },
-
 };
